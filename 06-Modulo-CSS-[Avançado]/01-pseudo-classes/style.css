@@ -1,0 +1,75 @@
+/*  ANATOMIA DE UMA PSEUDO CLASSE 
+
+.seletor:pseudoclasse{
+    propriedade: valor;
+} 
+
+*/
+
+
+
+#div-1 > p:first-child{
+    color: lightcoral;
+    font-weight: bolder;
+}
+#div-2 > p:last-child{
+    color: crimson;
+    font-weight: bolder;
+}
+
+
+
+
+/* Todo parágrafo que NÃO TIVER a classe "padrao" sofrerá modificações. */
+p:not(.padrao){
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* ================================================================ */
+/* -> Vai modificar todos os itens IMPARES.
+li:nth-child(odd){
+    color: goldenrod;
+}
+*/
+/* ================================================================ */
+/* -> Vai modificar todos os itens PARES.
+li:nth-child(even){
+    color: goldenrod;
+}
+*/
+/* ================================================================ */
+/* -> Vai modificar de cima para baixo o número de vezes que estiver declarado entre parênteses.
+li:nth-child(3n){    (2n)|(5n)(8n)|(3n)...
+    color: goldenrod;
+} 
+*/
+/* ================================================================ */
+/* -> Vai modificar apenas o item declarado entre parênteses.
+li:nth-child(6){
+    color: goldenrod;
+*/
+/* ================================================================ */
+/* -> Vai modificar apenas os itens dentro de um range pré-determinado.
+1 = A primeira metade do código diz respeito ao range de cima para baixo.
+2 = A segunda metade do código diz respeito ao range final, onde vai parar de estilizar.
+|--------1-------|-------2-------|
+li:nth-child(n+2):nth-child(-n+5){
+    color: goldenrod;
+} 
+*/
+/* ================================================================ */
+/* -> Vai modificar apenas o item declarado entre parênteses, agora de baixo para cima.
+li:nth-last-child(6){
+    color: goldenrod;
+}
+*/
+/* ================================================================ */
+/* -> Vai modificar apenas o item que não tiver nenhum irmão (pai/container nesse caso é a div).
+p:only-child{
+    color: goldenrod;
+} 
+*/
+/* ================================================================ */
