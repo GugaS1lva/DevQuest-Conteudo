@@ -1,0 +1,33 @@
+.float .right{
+    float: right;
+
+    background-color: darkgray;
+    width: 100px;
+    height: 100px;
+}
+
+.float .left{
+    float: left;
+
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+}
+
+.float::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+/* Exemplo de Float correto funcionando */
+img{
+    float: left;
+    width: "";
+    height: "";
+    margin-right: 15px;
+}

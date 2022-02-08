@@ -1,0 +1,36 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+section{
+    padding: 10px;
+}
+
+
+.em-bloco > li{
+    background: aqua;
+    margin-bottom: 10px;
+    width: 100px;
+}
+.em-linha > li{
+    display: inline;
+    background: aqua;
+}
+.em-linha-e-bloco > li{
+    display: inline-block;
+    background: aqua;
+    width: 100px;
+    height: 100px;
+}
+.em-none > li{
+    display: none;
+    background: aqua;
+    margin-bottom: 10px;
+    width: 100px;
+}

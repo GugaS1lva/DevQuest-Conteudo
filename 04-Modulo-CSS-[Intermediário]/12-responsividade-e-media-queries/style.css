@@ -1,0 +1,86 @@
+body{
+    background-color: #E1E2E1;
+}
+
+
+
+
+header{
+    padding: 10px 5px;
+    background-color: rgb(86, 8, 102);
+
+    position: fixed;
+    width: 100%;
+
+    box-shadow: 0px 0px 40px black;
+    text-shadow: 2px 2px 5px white;
+}
+header > h1{
+    display: inline-block;
+    text-indent: 10px;
+
+    color: white;
+    
+}
+header > nav{
+    float: right;
+}
+header > nav li{
+    display: inline-block;
+    padding: 15px;
+
+}
+header > nav > ul > li> a{
+    text-decoration: none;
+    color: white;
+}
+header > nav > ul > li> a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+main{
+    background-color: #fff;
+    padding: 30px;
+    padding-top: 85px;
+    min-width: 350px;
+    max-width: 900px;
+    height: 2000px;
+
+    margin: auto;
+}
+main > section > div{
+    font-size: 18px;
+
+}
+main > section > div > h1{
+    text-shadow: 2px 2px 5px rgb(86, 8, 102);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    
+}
+main > section > div > p{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+
+
+img{
+    width: 100%;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    
+}

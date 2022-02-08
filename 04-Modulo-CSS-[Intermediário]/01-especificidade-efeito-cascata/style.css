@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.marca-texto{
+    background-color: lightskyblue;
+    padding: 0px 5px;
+    font-weight: bolder;
+}
+.marca-texto-amarelo{
+    background-color: rgb(255, 255, 94);
+    color: black;
+    padding: 0px 5px;
+    font-weight: bolder;
+}
+.marca-texto-vermelho{
+    background-color: rgb(255, 56, 56);
+    color: black;
+    padding: 0px 5px 2px 5px;
+    font-weight: bolder;
+}
+
+
+
+
+
+.codigo-ilustrativo{
+    max-width: 150px;
+
+    border: 2px solid black;
+    border-radius: 4px;
+
+    float: left;
+}
+.codigo-ilustrativo:hover{
+    max-width: none;
+}
+
+
+
+
+
+body{
+    background-image: url(imagens/wallpaper005.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+div{
+    display: flex;
+    
+}
+div > p{
+    padding: 0px 10px;
+}
+
+
+
+
+
+
+.especificidade{
+    background-color: black;
+    color: white;
+
+    padding: 5px;
+
+    line-height: 1.6em;
+}

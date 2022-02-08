@@ -1,0 +1,41 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+}
+
+
+
+
+
+
+.marca-texto-amarelo{
+    background-color: rgb(248, 211, 0);
+}
+.marca-texto-azul{
+    background-color: rgb(112, 171, 207);
+}
+.marca-texto-laranja{
+    background-color: rgb(212, 138, 0);
+}
+
+div{
+    background-color: lightcyan;
+
+    max-width: 180px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 15px;
+}
+.estilo-de-lista-01{
+    list-style-type: none;
+}
+.estilo-de-lista-02{
+    list-style-type: disc;
+}
+.estilo-de-lista-03{
+    list-style-type: circle;
+}
+.estilo-de-lista-04{
+    list-style-type: square;
+}

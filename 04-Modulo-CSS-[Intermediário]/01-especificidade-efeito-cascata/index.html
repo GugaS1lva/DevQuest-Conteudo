@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade e Efeito Cascata</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Efeito Cascata:</h1>
+        <hr>
+        <section>
+            <h2>1.0 - Exemplo [HTML] </h2>
+            <div>
+                <img class="codigo-ilustrativo" src="imagens/efeito-cascata-01.png" alt="codigo-ilustrativo-1">
+                <p>Código padrão no HTML para exemplificar o efeito cascata natual.</p>
+            </div>
+        </section>
+        <section>
+            <h2>1.1 - Exemplo [CSS] </h2>
+            <div>
+                <img class="codigo-ilustrativo" src="imagens/efeito-cascata-02.png" alt="codigo-ilustrativo-2">
+                <p>Pela ordem de preferência da cascata, as configurações de estilo da tag <span class="marca-texto">link:css</span> se aplicam de cima para baixo. <em> <strong> <br>OBS: Classes foram usadas no exemplo.</strong> </em> </p>
+            </div>
+        </section>
+        <section> 
+            <h2>2.0 - Exemplo</h2>
+            <div>
+                <img class="codigo-ilustrativo" src="imagens/efeito-cascata-03.png" alt="codigo-ilustrativo-3">
+                <p>Estilos internos <span class="marca-texto">&lt;style&gt; &lt;/style&gt;</span> são priorizados no final da visualização do usuário por causa da leitura do código. <br>Primeiro o VSCode lê o <span class="marca-texto">link:css</span> e todos os códigos dessa página em sequência de cima para baixo, depois lê todos os estilos internos da página html. Já que o <span class="marca-texto">link:css</span> está sempre acima do <span class="marca-texto">&lt;style&gt; &lt;/style&gt;</span> o que prevalece ao final para o usuário são as configurações de estilo do <span class="marca-texto">&lt;style&gt; &lt;/style&gt;</span>.</p>
+            </div>
+        </section>
+        <section>
+            <h2>3.0 Exemplo</h2>
+            <div>
+                <img class="codigo-ilustrativo" src="imagens/efeito-cascata-04.png" alt="codigo-ilustrativo-4">
+                <p>Por sua vez, estilos <span class="marca-texto">inline</span> estão ainda mais abaixo do que os estilos <span class="marca-texto">internos</span>, mostrando assim para o usuário apenas as configurações de estilo <span class="marca-texto">inline</span> </p>
+            </div>
+        </section>
+        <hr>
+        <h1>Especificidade:</h1>
+        <section>
+            <div class="especificidade">
+                <ul>
+                    <li><span class="marca-texto-amarelo">ID's</span> = Primeiro nível de especificidade, recebe prioridade nas configurações de estilo</li>
+                    <li><span class="marca-texto-amarelo">Classes, Atributos e Pseudo-Classes</span> = Segundo nível de especificidade, recebe menos prioridade que os ID's.</li>
+                    <li><span class="marca-texto-amarelo">Elementos e Pseudo-Elementos</span> = Terceiro nível de especificidade, recebe o nível mais baixo de prioridade.</li>
+                </ul>
+            </div>
+            <div class="especificidade">
+                <ul>
+                    <li><span class="marca-texto-vermelho">!important</span> = Prioridade Absoluta. Tem peso máximo de prioridade dentre todas as outras, mas tem o mesmo peso de um outro !important <span class="marca-texto-vermelho">[usar com cuidado!]</span>.</li>
+                </ul>
+            </div>
+            <img src="" alt="">
+        </section>
+
+        
+    </main>
+</body>
+</html>

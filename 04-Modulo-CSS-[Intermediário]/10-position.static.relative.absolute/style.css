@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+
+.div{
+    color: white;
+    font-size: 32px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.div-static{
+    background-color: crimson;
+    position: static;
+
+    /* NÃO ACEITA MODIFICAÇÕES DE POSIÇÃO. */
+}
+.div-relative{
+    background-color: lightseagreen;
+    position: relative;
+
+    left: 30px;
+    right: 10px;
+    top: 70px;
+    bottom: 10px;
+    /* Usado pra mudar a "div" de lugar. [position: relative;] muda o lugar do elemento (com valores responsivos ou fixos). */
+}
+.div-absolute{
+    background-color: lightslategray;
+    position: absolute;
+
+    left: 135px;
+
+    /* Sobrepõe as camadas e elementos da tela. [position: absolute;] */
+}
+.div-static-02{
+    background-color: crimson;
+    position: static;
+}
+
+
+.elemento-relativo-com-filho{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(67, 0, 175);
+}
+.elemento-absoluto-com-pai{
+    position: absolute;
+
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    background-color: crimson;
+
+    bottom: 50%;
+    right: 50%;
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+h1{
+    font-size: 1.8em;
+}
+
+
+
+
+
+
+.cursor-01{
+    cursor: pointer;
+}
+
+.cursor-02{
+    cursor: progress;
+}
+
+.visitado:visited{
+    color: orange;
+}
+
+.ativado:active{
+    color: black;
+}

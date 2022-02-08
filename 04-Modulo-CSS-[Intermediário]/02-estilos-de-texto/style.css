@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+/*  */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+
+
+
+
+section{
+    background-image: url(src/wallpaper005.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+div{
+    background-color: rgb(75, 75, 75);
+    color: white;
+
+    padding: 0px 5px;
+    
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#alinhamento-01{
+    text-align: left;
+}
+#alinhamento-02{
+    text-align: center;
+}
+#alinhamento-03{
+    text-align: right;
+}
+
+
+
+
+
+#justificado{
+    text-align: justify;
+}
+#nao-justificado{
+    text-align: none;
+}
+
+
+
+
+
+#maiuscola{
+    text-transform: uppercase;
+}
+#minuscola{
+    text-transform: lowercase;
+}
+#capitalizada{
+    text-transform: capitalize;
+}
+
+
+
+
+
+.transformacao-de-textos{
+    background-color: lightgreen;
+    color: black;
+}
+
+
+
+
+
+#padrao{
+    text-decoration: none;
+}
+#sublinhado{
+    text-decoration: underline;
+}
+#uperlinhado{
+    text-decoration: overline;
+}
+#deletado{
+    text-decoration: line-through;
+}
