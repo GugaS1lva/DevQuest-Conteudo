@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário na Prática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Teste</h1>
+    <hr>
+    <div id="divisao">
+        <img src="Imagens/tela-cadastro-facebook.JPG" alt="tela-cadastro-facebook">
+    </div>
+    <hr>
+    <br>
+    <br>
+    <main>
+        <form method="get" action="index.html" enctype="multipart/form-data">
+
+            <input type="text" name="Nome" id="nome" placeholder="Nome" required>
+            <input type="text" name="Sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+            <br>
+            <input type="text" name="Celular-Email" id="Celular-Email" placeholder="Celular ou Email" required>
+            <br>
+            <br>
+            <input type="password" name="Senha" id="senha" placeholder="Nova Senha" required>
+            <br>
+            <br>
+            <br>
+            <br>
+            <select name="dia" id="dia">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+            </select>
+
+            <select name="mes" id="mes">
+                <option value="jan">jan</option>
+                <option value="fev">fev</option>
+                <option value="mar">mar</option>
+                <option value="abr">abr</option>
+                <option value="mai">mai</option>
+            </select>
+            
+            <select name="ano" id="ano">
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" id="masculino" value="masculino">
+
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="feminino" value="feminino">
+
+            <label for="personalizado">Personalizado</label>
+            <input type="radio" name="genero" id="personalizado" value="personalizado">
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="file" name="Perfil" id="Perfil">
+            <br>
+            <br>
+            <input type="submit" value="Cadastre-se">
+        </form>
+    </main>
+    
+    
+</body>
+</html>

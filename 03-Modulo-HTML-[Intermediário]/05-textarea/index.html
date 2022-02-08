@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea</title>
+    <style>
+        body{
+            background-color: rgb(85, 85, 85);
+        }
+        p{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+            padding: 30px 20px;
+            border-radius: 10px;
+            border: 2px solid white;
+
+            max-width: 600px;
+            min-width: 600px;
+        }
+        /* #569CB3 */
+        .tag{
+            color: #569CB3;
+            font-weight: bolder;
+        }
+        .propriedade{
+            color: lightskyblue;
+            font-weight: bolder;
+        }
+        .observação{
+            background-color: lightgoldenrodyellow;
+            color: black;
+            padding: 4px 3px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="Texto-De-Exemplo" id="txt-01" cols="30" rows="10">Todo texto escrito nessa caixa será subtituido pelo que o usuário escrever e será encaminhado para o Backend.
+    </textarea>
+    <textarea name="Texto-De-Exemplo" id="txt-02" cols="30" rows="10">As caixas se comportam em linha.</textarea>
+    
+    <img src="imagens/Screenshot_6.png" alt="Print do Código">
+    <p>Por padrão, a tag <span class="tag">&lt;textarea&gt;</span> vem com as propriedades <span class="propriedade">name</span> | <span class="propriedade">id</span> | <span class="propriedade">cols</span> | <span class="propriedade">rows</span>.</p>
+    <p><span class="propriedade">name</span> | Recebe o valor da tag que será entrege ao <span class="observação">[backend]</span></p>
+    <p><span class="propriedade">id</span> | Recebe o identificador da tag. <span class="observação">[Laçar com um &lt;label&gt;]</span></p>
+    <p><span class="propriedade">cols</span> | Recebe o valor das colunas da textarea <span class="observação">[Largura da box]</span></p>
+    <p><span class="propriedade">rows</span> | Recebe o valor das linhas da textarea <span class="observação">[Altura da box]</span></p>
+</body>
+</html>

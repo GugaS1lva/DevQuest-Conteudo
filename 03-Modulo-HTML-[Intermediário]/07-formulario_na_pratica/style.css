@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#divisao{
+    text-align: center;
+}
+
+
+
+
+
+main{
+    margin: auto;
+}
+
+
+
+
+
+form{
+    background-color: lightgray;
+    max-width: 500px;
+}
