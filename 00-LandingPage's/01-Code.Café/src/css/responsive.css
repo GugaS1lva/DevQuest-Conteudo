@@ -1,0 +1,94 @@
+@media (max-width: 991.98px){
+    .secao-informativa{
+        padding: 153px 30px;
+    }
+    .secao-informativa h2{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 767.98px){
+    .contato .alinhamento-informacoes{
+        position: relative;
+        text-align: center;
+
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 719.98px){
+    .coletania .grande{
+        width: 100%;
+    }
+    .coletania .media{
+        width: 100%;
+    }
+    .coletania .pequena-01{
+        width: 50%;
+    }
+    .coletania .pequena-02{
+        width: 50%;
+    }
+    
+
+    .rodape{
+        text-align: center;
+        background: none;
+        background-color: black;
+    }
+    .rodape .logo{
+        display: block;
+        margin-bottom: 122px;
+    }
+    .rodape ul{
+        display: block;
+        width: 100%;
+        margin-bottom: 122px;
+    }
+    .rodape ul li{
+        display: block;
+    }
+    .rodape .redes-sociais{
+        float: none;
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 424.98px){
+    .cabecalho .logo{
+        display: block;
+        margin: 0 auto;
+    }
+    .cabecalho nav{
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+    .cabecalho nav ul li{
+        display: block;
+    }
+    .cabecalho nav ul li a{
+        padding: 10px;
+    }
+
+    .painel h2{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 374.98px){
+    .coletania .grande{
+        width: 100%;
+    }
+    .coletania .media{
+        width: 100%;
+    }
+    .coletania .pequena-01{
+        width: 100%;
+    }
+    .coletania .pequena-02{
+        width: 100%;
+    }
+}
