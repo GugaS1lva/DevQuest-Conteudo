@@ -33,3 +33,33 @@ backdrop-filter: blur(10px);
     color: goldenrod;
 }
 
+/* BEFORE ============================================== */
+/* Para colocar imagens pequenas: 
+    OBS: Testo pode ser passado após o content, dessa forma: content: "texto de exemplo"; 
+*/
+
+/* .section-04 li::before{ 
+    content: url(favicon.ico);
+} */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Para usar a propriedade Background: */
+
+.section-04 li::before{
+    content: "";
+    background: url(favicon.ico) center center no-repeat;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+/* AFTER ================================================= */
+/* Exatamente como o BEFORE, muda apenas o sentido. */
+
+.section-05 li::after{
+    content: "";
+    background: url(favicon.ico) center center no-repeat;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
