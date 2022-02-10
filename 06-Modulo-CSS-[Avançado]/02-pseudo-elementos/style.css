@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* EFEITO GLASS
+background: rgba( 255, 255, 255, 0,1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px); 
+*/
+
+/*  ESCOPO DE UM PSEUDO-ELEMENTO
+    seletor::pseudo-elemento{
+        propriedade: valor;
+    } 
+*/
+
+
+/* FIRST LETTER ======================================== */
+/* Estiliza apenas a primeira LETRA do texto */
+.section-01 p::first-letter{
+    font-size: 2em;
+    color: goldenrod;
+}
+
+/* FIRST LINE ========================================== */
+/* Estiliza apenas a primeira LINHA do texto. OBS: Conforme a linha aumenta, a estilização também aumenta */
+.section-02 p::first-line{
+    font-size: 2em;
+    color: goldenrod;
+}
+
+/* MARKER ============================================== */
+/* Estiliza as bolinhas das listas (aprofundar estudos!) */
+.section-03 li::marker{
+    font-size: 2em;
+    color: goldenrod;
+}
+
