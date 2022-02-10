@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+    background: url(0a3e76c4-ddeb-4d9f-984f-3324c0ee4e41.jpeg);
+    text-align: center;
+}
+section{
+    margin: auto;
+    padding: 10px;
+
+    max-width: 500px;
+
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+    
+    background: rgba( 255, 255, 255, 0,1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+li{
+    list-style-type: none;
+}
