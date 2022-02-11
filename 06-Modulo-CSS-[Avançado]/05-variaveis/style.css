@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root{
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-titulos: 'Times New Roman', Times, serif;
+    --cor-padrao: crimson;
+    --cor-titulos: lightskyblue;
+    --cor-letra-especial: pink;
+    --cor-fundo-especial: black;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    color: var(--cor-padrao);
+}
+h2, h3{
+    font-family: var(--fonte-titulos);
+    color: var(--cor-titulos);
+}
+article{
+    --fonte-especial:'Courier New', Courier, monospace; 
+    color: var(--cor-letra-especial);
+    background-color: var(--cor-fundo-especial);
+    font-family: var(--fonte-especial);
+}
