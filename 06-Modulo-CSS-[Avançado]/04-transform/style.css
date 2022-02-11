@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+img{
+    width: 200px;
+}
+
+
+/* Diz respeito ao tamanho da imagem */
+.section-01 .scale{
+    transform: scale(1.2, 1.2);
+
+    transform: scaleX();
+    transform: scaleY();
+    transform: scaleZ();
+}
+/* Diz respeito a rotação da imagem  */
+.section-02 .rotate{
+    transform: rotate(20deg);
+
+    transform: rotateX();
+    transform: rotatey();
+    transform: rotatez();
+}
+/* Diz respeito a posição da imagem  */
+.section-03 .translate{
+    transform: translate(150px, 20px);
+
+    transform: translateX();
+    transform: translatey();
+    transform: translatez();
+}
