@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* ESTILO DO CONTAINER */
+.container{ 
+    background-color: lightgray;
+    max-width: 500px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+
+
+
+/* DIRECTION -> Muda a direção dos itens dentro da tag pai. */
+.direction{
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: row-reverse;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+}
+
+
+/* WRAP -> Quebra a linha os itens pra baixo sem danificar o tamanho da imagem. */
+.wrap{
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+}
+
+
+/* FLOW -> SHORTHAND das propriedades DIRECTION e WRAP. */
+.flow{
+    display: flex;
+    flex-flow: row nowrap;
+}
