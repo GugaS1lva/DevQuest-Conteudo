@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="align-items.css">
+</head>
+<body>
+    <!-- 
+        Eixo principal = horizontalmente
+        Eixo transversal = verticalmente
+    -->
+    <!-- O ALIGN-ITEMS vai definir o comportamento padrão dos flex-items (das div's que estão dentro do container/div-pai) e como eles estão dispostos ao longo do Eixo Transversal -->
+
+    <h1>Flex Container: Align Items</h1>
+
+    <section> <!-- Mantém os itens no topo da div pai. -->
+        <h2>flex-start</h2>
+
+        <div class="container flex-start">
+            <div class="item item-01">lorem ipsum dolor</div>
+            <div class="item item-02">lorem ipsum dolor</div>
+            <div class="item item-03">lorem ipsum dolor</div>
+        </div>
+    </section>
+
+    <section> <!-- Mantém os itens no fim da div pai. -->
+        <h2>flex-end</h2>
+
+        <div class="container flex-end">
+            <div class="item item-01">lorem ipsum dolor</div>
+            <div class="item item-02">lorem ipsum dolor</div>
+            <div class="item item-03">lorem ipsum dolor</div>
+        </div>
+    </section>
+
+    <section> <!-- Mantém os itens no centro (em relação ao display: flex; -> flex-direction: row;) da div pai. -->
+        <h2>center</h2>
+        <p>OBS: Só centalizou os itens horizontalmente no meio da div por causa do comportamento padrão do display: flex; -> flex-direction: row; (que mantém tudo em linha horizontal indo para a direita.)<br>Caso queira os itens alinhado verticalmente, mude de row para column. display: flex; -> flex-direction: column;</p>
+
+        <div class="container center">
+            <div class="item item-01">lorem ipsum dolor</div>
+            <div class="item item-02">lorem ipsum dolor</div>
+            <div class="item item-03">lorem ipsum dolor</div>
+        </div>
+    </section>
+
+    <section> <!-- Estiliza os itens de forma que eles preencham todo o container. -->
+        <h2>stretch</h2>
+
+        <div class="container stretch">
+            <div class="item item-01">lorem ipsum dolor</div>
+            <div class="item item-02">lorem ipsum dolor</div>
+            <div class="item item-03">lorem ipsum dolor</div>
+        </div>
+    </section>
+    
+    <section> <!-- Alinha o conteúdo dos itens na mesma linha horizontal - centraliza o conteúdo. -->
+        <h2>baseline</h2>
+
+        <div class="container baseline">
+            <div class="item item-01">lorem ipsum dolor</div>
+            <div class="item item-02">lorem ipsum dolor</div>
+            <div class="item item-03">lorem ipsum dolor</div>
+        </div>
+    </section>
+</body>
+</html>
