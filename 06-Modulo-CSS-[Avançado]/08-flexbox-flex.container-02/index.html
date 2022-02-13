@@ -5,10 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="justify-content.css">
+    
 </head>
 <body>
-    <h1>Flex Container: </h1>
+    <h1>Flex Container: Justify Content</h1>
 
+    <section> <!-- Comportamento padrão em linha dos itens que estão dentro de um container/div-pai. -->
+        <h2>flex-start</h2>
+
+        <div class="container flex-start">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+        </div>
+    </section>
     
+    <section> <!-- Comportamento inverso ao flex-start. -->
+        <h2>flex-end</h2>
+
+        <div class="container flex-end">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+        </div>
+    </section>
+
+    <section> <!-- Põe todos os itens do container centralizados ao máximo. -->
+        <h2>center</h2>
+
+        <div class="container center">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+        </div>
+    </section>
+
+    <section> <!-- Divide igualmente os espaços entre os itens que estão dentro de um container/div-pai. -->
+        <h2>space-between</h2>
+
+        <div class="container space-between">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+            <!-- <div class="item item-04">4</div> -->
+        </div>
+    </section>
+    
+    <section> <!-- Cria um espaço em volta (space around) de cada item. -->
+        <h2>space-around</h2>
+
+        <div class="container space-around">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+        </div>
+    </section>
+
+    <section> <!-- Criar espaço entre os itens e entre as bordas de forma que sejam todos iguais. -->
+        <h2>space-evenly</h2>
+
+        <div class="container space-evenly">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+        </div>
+    </section>
 </body>
 </html>
