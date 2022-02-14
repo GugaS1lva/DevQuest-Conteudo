@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="align-content.css">
+</head>
+<body>
+    <h1>Flex Container: Align Content</h1>
+    <p>Ele vai alinhar as linhas de um flex container quando tem espaço sobrando no Eixo Transversal - Alinhamento de cima para baixo.</p>
+    <hr>
+
+    <section>
+        <h2>flex-start</h2>
+
+        <div class="container flex-start">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>flex-end</h2>
+
+        <div class="container flex-end">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>center</h2>
+
+        <div class="container center">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>stretch</h2>
+
+        <div class="container stretch">
+            <div class="item item-01">1</div>
+            <div class="item item-02">2</div>
+            <div class="item item-03">3</div>
+        </div>
+    </section>
+
+    <section> <!-- Distribui os itens uniformemente até o fim da primeira linha, depois até o fim da última linha do container -->
+        <h2>space-between</h2>
+
+        <div class="container space-between">
+            <div class="item item-01">lorem ipsum dolor</div>
+            <div class="item item-02">lorem ipsum dolor</div>
+            <div class="item item-03">item-03</div>
+            <div class="item item-04">item-04</div>
+            <div class="item item-05">item-05</div>
+            <div class="item item-06">item-06</div>
+        </div>
+    </section>
+
+    <section> 
+        <h2>space-around</h2>
+
+        <div class="container space-around">
+            <div class="item item-01">lorem ipsum dolor</div>
+            <div class="item item-02">lorem ipsum dolor</div>
+            <div class="item item-03">item-03</div>
+            <div class="item item-04">item-04</div>
+            <div class="item item-05">item-05</div>
+            <div class="item item-06">item-06</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>space-evenly</h2>
+
+        <div class="container space-evenly">
+            <div class="item item-01">lorem ipsum dolor</div>
+            <div class="item item-02">lorem ipsum dolor</div>
+            <div class="item item-03">item-03</div>
+            <div class="item item-04">item-04</div>
+            <div class="item item-05">item-05</div>
+            <div class="item item-06">item-06</div>
+        </div>
+    </section>
+</body>
+</html>
