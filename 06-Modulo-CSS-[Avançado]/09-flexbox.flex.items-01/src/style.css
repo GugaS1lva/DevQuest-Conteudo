@@ -1,0 +1,49 @@
+
+/* GROW -> Define a capacidade de um flex item crescer se for necessário dentro de um container.
+OBS: Pra definir essa prorpiedade a gente vai usar valores inteiros, sem ser px. */
+
+/* Por padrão o valor é zero, os flex itens vão ocupar um tamanho máximo baseado no conteúdo que eles possuem ou na largura do elemento (se setado uma largura previamente). */
+
+
+
+.grow-00{
+    flex-grow: 0;
+}
+.grow-01{
+    flex-grow: 1;
+}
+.grow-02{
+    flex-grow: 2;
+}
+.grow-03{
+    flex-grow: 3;
+}
+.grow-04{
+    flex-grow: 4;
+}
+
+
+
+.basis-auto{
+    flex-basis: auto;
+}
+.basis-0{
+    flex-basis: 0;
+}
+.basis-100{
+    flex-basis: 100px;
+}
+.basis-200{
+    flex-basis: 200px;
+}
+.basis-300{
+    flex-basis: 300px;
+}
+/* SHORTHAND:
+    .estilizando-itens{
+        flex: 'row' 'shrink' 'basis';
+    }      
+*/
+
+
+

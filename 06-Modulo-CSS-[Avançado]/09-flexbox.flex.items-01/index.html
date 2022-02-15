@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <h1>Flex Items: Grow - Basis - Shrink</h1>
+
+    <section>
+        <h2>Grow</h2>
+
+        <h3>Flex Grow</h3>
+
+        <div class="container">
+            <!-- Comportamento padrão sem espaços mo container. flex-grow: 0; -> ocupa todo o espaço do conteúdo (onde acabar o texto vai acabar o "padding" do item ou da Lorem).-->
+            <div class="item grow-00">0</div>
+
+            <!-- Ganha mais poder de preenchimento do container. 
+            OBS: Se todos os itens tiverem o mesmo valor de grow (flex-grow: 1;) todos vão ter o mesmo poder de preenchimento, mesmo se ouver itens que naturalmente ocupem mais espaço (como um lorem no meio de textos pequenos - "item-01"). -->
+            <div class="item grow-01">1</div>
+
+            <!-- Terá o dobro do poder de preenchimento do flex-grow: 1; -->
+            <div class="item grow-02">2</div>
+
+            <!-- Terá mais poder que o flex-grow: 2; -->
+            <div class="item grow-03">3</div>
+
+            <!-- Terá mais poder que o flex-grow: 3; -->
+            <div class="item grow-04">4</div>
+        </div>
+    </section>
+
+    <section> <!-- Como forçar que itens de conteúdos diferente tenham o mesmo tamanho? Basis resolve isso - transforma itens com 'tamanhos de conteúdos' difetens em itens com tamanhos de conteúdos iguais. -->
+        <h2>basis</h2>
+
+        <div class="container">
+            <!-- Basis auto já é o padrão, mantem os tamanhos dos itens de acordo com seu prórpio conteúdo. -->
+            <div class="item grow-01 basis-auto">lorem 123</div>
+
+            <!-- O Basis 0 em todos os itens do container, força todos eles a terem o mesmo tamanho, em relação ao item com maior conteúdo do container. -->
+            <div class="item grow-01 basis-0">lorem 123 456</div>
+
+
+            <div class="item grow-01 basis-100">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+        </div>
+    </section>
+    
+
+    <!-- !!!REVER O SHRINK!!! -->
+    <section> <!-- Shrink significa encolher. Essa prorpiedade vai definir a capacidade de um item de encolher se for necessário, dentro de um container.
+    OBS: O padrão do 'flex-shrink:;' é 1, ou seja, os itens vão reduzir para caber dentro de um container. -->
+        <h2>shrink</h2>
+
+        <div class="container shrink">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+</body>
+</html>
