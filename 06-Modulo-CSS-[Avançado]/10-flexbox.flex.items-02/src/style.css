@@ -1,0 +1,26 @@
+/* flex: 0; => Serve pra evitar que todos os elementos filhos ocupem o tamanho do container */
+.article .flex-shorthand-01{
+    /* flex-grow, flex-shrink, flex-basis */
+    /* Se não informado valores, o padrão será sempre: 0 1 0 */
+    flex: 0;
+}
+.article .flex-no-shorthand-01{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+
+
+/* fex: 1; => Serve pra forçar que todos os elementos filhos ocupem todo o espaço do container */
+.article .flex-shorthand-02{
+    flex: 1;
+}
+.article .flex-no-shorthand-02{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+.article .wrap{
+    flex-wrap: wrap;
+}
