@@ -24,3 +24,34 @@
 .article .wrap{
     flex-wrap: wrap;
 }
+
+
+
+/* Muda a ordem dos itens dispostos em um container - no exemplo, mudou a posição do '.item-03{}' para a posição 5 (order: 5;). Isso é especialmente útil quando eu não quero mexer no HTML do projeto*/
+.order .item-03{
+    order: 5;
+}
+
+
+
+/* O Align Self vai definir o posicionamento específico de um ou mais elementos dentro de um container (de um ou mais dos flex-items).*/
+/* align-self: auto; >>> Já é o padrão */
+.align-self .item-05{
+    align-self: auto;
+}
+/* Está sendo posicionando no topo da coluna. Subiu o máximo que pode sem danificar o espaço do seu próprio conteúdo. */
+.align-self.start .item-03{
+    align-self: flex-start;
+}
+/* Está sendo posicionando no fim da coluna. Desceu o máximo que pode sem danificar o espaço do seu próprio conteúdo. */
+.align-self.end .item-03{
+    align-self: flex-end;
+}
+/* Está sendo posicionando no meio da coluna. Centralizou o máximo que pode sem danificar o espaço do seu próprio conteúdo. */
+.align-self.center .item-03{
+    align-self: center;
+}
+/* Está preenchendo toda a coluna. Preencheu o máximo que pode esticando o espaço do seu próprio conteúdo. */
+.align-self.stretch .item-03{
+    align-self: stretch;
+}
