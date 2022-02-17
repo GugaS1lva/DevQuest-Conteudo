@@ -1,0 +1,24 @@
+.container > div{
+    border: 1px solid black;
+    background-color: darkred;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+/* Com o INLINE-GRID os itens não vão ocupar todo o tamanho do elemento pai e sim o tamanho do maior item do container:
+    .container{
+        display: inline-grid;
+    }
+*/
+
+/* GRID TEMPLATE >>> Vai definir as linhas e colunas do grid.
+A estrutura dos templates é a escrita abaixo. */
+.container{
+    display: grid;
+
+    /* O primeiro valor diz respeito à primeira COLUNA, o segundo valor à segunda COLUNA e assim por diante. E o valor auto de cada coluna diz respeito ao tamanho automático em relação ao tamanho do CONTAINER, ou seja, "preencha todo o CONTAINER de acordo com o número de COLUNAS dispostos nos TEMPLATES." */
+    grid-template-columns: auto auto;
+
+    /* O primeiro valor diz respeito à primeira LINHA, o segundo valor à segunda LINHA e assim por diante. OBS: Todas as COLUNAS que estiverem dentro da primeira LINHA serão afetadas pelo template-rows.*/
+    grid-template-rows: ''; /* auto | 10px | 10% */
+}
