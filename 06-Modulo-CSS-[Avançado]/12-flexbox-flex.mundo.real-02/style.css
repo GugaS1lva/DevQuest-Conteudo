@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    padding: 30px;
+    background-color: lightblue;
+
+    /* Alinhamento horizontal */
+    justify-content: space-between;
+
+    /* Alinhamento vertixal */
+    align-items: center;
+
+    /* Quebra de linha responsiva para quando o painel/menu (nesse caso, o header) for grande de mais. */
+    flex-wrap: wrap;
+}
+
+.menu{
+    display: flex;
+}
+
+ul li{
+    padding: 0px 15px;
+}
+
+
+@media(max-width: 425px){
+    .logo{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        display: block;
+        margin-top: 50px;
+    }
+    .menu li{
+        margin-left: 0;
+    }
+    .menu a{
+        padding: 5px;
+        display: block;
+    }
+}
