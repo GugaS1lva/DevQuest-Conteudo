@@ -1,0 +1,16 @@
+.flex{
+    height: 600px;
+    width: 100%;
+    background-color: lightgreen;
+
+
+/* CENTRALIZAR ITENS VERTICALMENTE E HORIZONTALMENTE DENTRO DE UM CONTAINER:  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex h2{
+    font-size: 3em;
+    
+}
