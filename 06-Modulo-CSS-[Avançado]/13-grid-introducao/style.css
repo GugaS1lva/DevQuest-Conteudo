@@ -16,9 +16,34 @@ A estrutura dos templates é a escrita abaixo. */
 .container{
     display: grid;
 
-    /* O primeiro valor diz respeito à primeira COLUNA, o segundo valor à segunda COLUNA e assim por diante. E o valor auto de cada coluna diz respeito ao tamanho automático em relação ao tamanho do CONTAINER, ou seja, "preencha todo o CONTAINER de acordo com o número de COLUNAS dispostos nos TEMPLATES." */
-    grid-template-columns: auto auto;
 
-    /* O primeiro valor diz respeito à primeira LINHA, o segundo valor à segunda LINHA e assim por diante. OBS: Todas as COLUNAS que estiverem dentro da primeira LINHA serão afetadas pelo template-rows.*/
-    grid-template-rows: ''; /* auto | 10px | 10% */
+    /* GRID TEMPLATE COLUMNS >>> */
+    /* O primeiro valor diz respeito a primeira COLUNA, o segundo valor a segunda COLUNA e assim por diante. E o valor AUTO de cada coluna diz respeito ao tamanho automático em relação ao tamanho do CONTAINER, ou seja, "preencha todo o CONTAINER de acordo com o número de COLUNAS dispostos nos TEMPLATES." */
+    /* grid-template-columns: auto auto; */
+
+
+    /* GRID TEMPLATE ROWS >>> */
+    /* O primeiro valor diz respeito a primeira LINHA, o segundo valor a segunda LINHA e assim por diante. OBS: Todas as COLUNAS que estiverem dentro da primeira LINHA serão afetadas pelo template-rows.*/
+    /* grid-template-rows: ''; auto | 10px | 10% */
+
+
+    /* REPEAT() >>> */
+    /* Facilita a repetição de estilos em determinadas linhas/colunas.
+    'repeat(2, 150px)' está forçando a estilização das 2 primeiras linhas com 150px cada uma.
+    O primeiro valor diz respeito a quantidade de linhas/colunas que vão ser estilizadas. Separados por vírgula, vem o segundo valor que diz respeito a estilização do conteúdo em si.*/
+    /* grid-template-rows: repeat(2, 150px); */
+
+
+    /* ROW + COLUMN >>> */
+    /* Abreviação do ROW e do COLUMN => Os primeiros valores (antes da barra) diz respeito as LINHAS e os segundos valores (depois da barra) diz respeito as COLUNAS.*/
+    /* grid-template: repeat(3, 50px) / repeat(5, auto); */
+
+
+    /* GRID-GAP >>> O tamanho entre as LINHAS e as COLUNAS */
+    /*  grid-row-gap: 10px;
+        grid-column-gap: 10px; */
+    /* grid-gap: 10px 10px; SHORTHAND */
+
+
+    
 }
