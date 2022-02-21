@@ -1,0 +1,103 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 600px;
+}
+
+
+.cabecalho{
+    background-color: #FE8200;
+}
+.menu{
+    background-color: #7FC78D;
+}
+.secao-principal{
+    background-color: #FFA9BF;
+}
+.aside{
+    background-color: #FFE100;
+}
+.rodape{
+    background-color: #F38C76;
+}
+
+
+
+.cabecalho{
+    grid-area: parte-superior;
+}
+.menu{
+    grid-area: navegacao;
+}
+.secao-principal{
+    grid-area: centro;
+}
+.aside{
+    grid-area: aside;
+}
+.rodape{
+    grid-area: parte-inferior;
+}
+/* VERSÃO COMPLETA >>> */
+/* 
+    .container{
+        display: grid;
+
+        max-width: 600px;
+        grid-template-areas: 
+        "parte-superior parte-superior parte-superior"
+        "navegacao centro aside"
+        "parte-inferior parte-inferior parte-inferior";
+        text-align: center;
+    } 
+*/
+
+/* DICAS >>> */
+/* Espaços Vazios:
+    É possível criar espaços vazios usando um '.' (ponto) dentro das àspas duplas da tag Grid Template Area.
+    EX: 
+    SEM ESPAÇOS VAZIOS:
+        .container{
+            grid-template-areas: 
+            "parte-superior parte-superior parte-superior"
+            "navegacao centro aside"
+            "parte-inferior parte-inferior parte-inferior";
+        } 
+    COM ESPAÇOS VAZIOS:
+        .container{
+            grid-template-areas: 
+            "parte-superior parte-superior parte-superior"
+            ". centro ."
+            "parte-inferior parte-inferior .";
+        }
+*/
+
+/* VERSÃO COM SHORTHAND */
+.container{
+    display: grid;
+
+    text-align: center;
+    max-width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.575);
+
+    grid: 
+    "parte-superior parte-superior parte-superior" 45px
+    "navegacao centro aside" 300px
+    "parte-inferior parte-inferior parte-inferior" 45px
+    / 140px auto 140px; 
+
+    /* LINHAS são definidas ao lado de cada item. COLUNAS são definidas separadas por uma barra e logo depois seus valores.
+    EX:
+        grid:
+            ". . ." 10px
+            ". . ." 10px
+            ". . ." 10px / 140px auto 140px; 
+    */
+}
+.item{
+    margin: 5px;
+}
