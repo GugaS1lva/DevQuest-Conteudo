@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    padding: 3em;
+    grid-gap: 2em;
+
+    /* "minmax(200px, 1fr)" -> Vai definir uma largura mínima (primeiro valor a ser informado) e máxima (segundo valor a ser informado) pra cada um dos itens. Nesse caso: cada coluna. */
+    /* "1fr" -> 'Uma fração do tamanho'. Se eu tiver 4 colunas por container cada coluna vai ter o equivalente a 25% do tamanho total (100%) do container. */
+    /* EXEMPLO SEM O AUTO-FILL (Não resovlve 100%)
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    */
+
+    /* Divide todos os itens em colunas ocupando 100% do container. Cada coluna com largura mínima de 200px e largura máxima de uma fração (1fr) do total de colunas dispostas dentro do container. 
+        Cada coluna deve ocupar simetricamente o total de espaço da div pai independentemente do tamanho da tela.  */
+    /*  EXEMPLO DE AUTO-FIT */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+
+    /* . . . 
+        Cria uma série de "colunas fantasmas" pra forçar cada coluna a ter no máximo um determinado tamanho (nesse caso 200px - que foi informado logo depois da vírgula)*/
+    /* EXEMPLO DE AUTO-FILL 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    */
+}
+.container p{
+    padding: 2em;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+}
