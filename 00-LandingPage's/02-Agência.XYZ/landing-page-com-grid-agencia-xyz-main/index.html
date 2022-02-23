@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência XYZ</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/font-awesome.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/">
+                <h1 class="logo">Agência XYZ</h1>
+            </a>
+
+            <!-- CAIXA DE SELEÇÃO -> Caixinha pra marcar e desmarcar. Vai servir pra expandir um container com um menu em coluna com todos os links da página. -->
+            <nav>
+                <input type="checkbox" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>We Make Cool Things</h2>
+    </section>
+
+    <section class="about" id="about">
+        <div class="item">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatem earum consequuntur? Illum molestiae nam sint rerum ullam delectus repellendus dolor rem numquam ipsa eligendi placeat, minus nobis molestias fugiat?</p>
+            <a href="" class="btn-know-more">Saiba Mais...</a>
+        </div>
+        <div class="image right"></div>
+        <div class="image left"></div>
+        <div class="item">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatem earum consequuntur? Illum molestiae nam sint rerum ullam delectus repellendus dolor rem numquam ipsa eligendi placeat, minus nobis molestias fugiat?</p>
+            <a href="" class="btn-know-more">Saiba Mais...</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="service">
+            <img src="src/images/bolinha1.png" alt="Bolinha - 01">
+            <div class="service-info">
+                <h3>SEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam dolores molestias sunt, vero eligendi dolorem eum dignissimos quod iure fuga corporis quisquam repellendus quidem iste voluptatem! Laudantium, dolorum nemo.</p>
+            </div>
+        </div>
+        
+        <div class="service">
+            <img src="src/images/bolinha2.png" alt="Bolinha - 02">
+            <div class="service-info">
+                <h3>Landing Pages</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam dolores molestias sunt, vero eligendi dolorem eum dignissimos quod iure fuga corporis quisquam repellendus quidem iste voluptatem! Laudantium, dolorum nemo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="project">
+            <a href="">
+                <img src="src/images/tomatoes.jpg" alt="Tomatoes">
+            </a>
+        </div>
+        <div class="project">
+            <a href="">
+                <img src="src/images/landscape.jpg" alt="Landscape">
+            </a>
+        </div>
+        <div class="project">
+            <a href="">
+                <img src="src/images/plants.jpg" alt="Plants">
+            </a>
+        </div>
+        <div class="project">
+            <a href="">
+                <img src="src/images/flowers.jpg" alt="Flowers">
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <h4>Agência XYZ</h4>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="social">
+            <a href="">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-pinterest"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
