@@ -13,5 +13,5 @@
 
 console.log('Vamos caminhar!')
 for (let passo = 1; passo <= 5; passo++){
-    console.log(`Dê agora o passo ${passo}.`)
+    console.log(`Dê agora o passo ${passo}`)
 }
