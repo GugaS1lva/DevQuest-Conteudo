@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo no JS</title>
+</head>
+<body>
+    ESSE EXERCÍCIO DEVE SER ESTUDADO DENTRO DO VS CODE PARA MELHOR DESEMPENHO.
+    Escopo no JavaScript
+
+        [A acessibilidade das variáveis é limitada ao escopo onde as mesmas são criadas.]
+        <!-- 
+            Exemplo - 01:
+                let msg = 'Olá, Mundo!'
+                console.log(msg)
+                
+            //Vai mostrar o valor de msg.
+            
+            Exemplo - 02:
+                if (true){
+                    let msg = 'Olá, Mundo!'
+                }
+                console.log(msg)
+
+            //Vai dar um erro (variável 'msg' não declarada).
+        -->
+        <hr>
+        Tipos de escopo que existe no JS:
+            • Escopo de BLOCO:
+                Um bloco de código no js define um escopo pra variáveis criadas com o CONST e LET.
+        
+            • Escopo AUTÔNOMO:
+                Exatamente igual ao 'Escopo de bloco:'.
+                    <!-- 
+                        Estrutura + Exemplos:
+                            {
+                                const msg = 'Olá, Mundo!'
+                                console.log(msg)
+                            }
+                            //Vai mostrar o valor de msg.
+
+                            =============================
+                            {
+                                const msg = 'Olá, Mundo!'
+                            }
+                            console.log(msg)
+                            //Vai dar um erro (variável 'msg' não declarada).
+                     -->
+            
+            • Escopo de FUNÇÃO:
+                Uma função JS define um escopo para variáveis criadas com o LET, CONST e VAR.
+            
+            • Escopo de GLOBAL:
+                Pode ser declarada num 'script local' dentro da página HTML e servirá pra todos os arquivos JS separados.
+                OBS: Cuidado com o EFEITO CASCATA (ordem de execução de cada tag script)
+    <script src="index.js"></script>
+</body>
+</html>
