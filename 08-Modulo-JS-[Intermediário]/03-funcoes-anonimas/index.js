@@ -29,3 +29,14 @@ console.log(somaResultado)
 
 // Define FINALMENTE os valores de n1 e n2. Então, todo o fluxo inicia novamente: os valores de n1 e n2 são adicionados e sofrem a operação matemática. Os valores são modificados e mandados para dentro da função anônima, que será atribuida à variavel 'somaResultado' e que por fim será mostrada pelo 'console.log()'.
 console.log(somaResultado(12, 5))
+
+
+```
+    let resultadoDaSoma = function(n1, n2){
+        return n1 + n2
+    }
+
+    console.log(resultadoDaSoma(12, 5))
+
+    >>> 17
+```
