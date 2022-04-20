@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| DOM |</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        strong{
+            background-color: #808080;
+            padding: 2px 5px;
+        }
+        span{
+            background-color: #C4C4C4;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>| DOM | Manipulando Elementos</h1>
+    
+    <main>
+        <section class="post">
+            <p><strong>Guga Silva</strong> <span>@GugaSilva - 10 min</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci qui inventore similique nulla autem repellendus nisi, ex expedita rerum? Non soluta deleniti voluptate maiores voluptatem pariatur veniam harum quo!</p>
+
+            <br>
+
+            <div class="comentarios">
+                <h3>Comentários</h3>
+
+                <input type="text" name="comentario" id="comentario" placeholder="Digite seu Comentário">
+                <button onclick="addComentario()">Adicionar Comentário</button>
+
+                <br>
+
+                <div id="novos-comentarios"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
