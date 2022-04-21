@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| DOM |</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>| DOM | Estilizando Elementos</h1>
+    
+    <button onclick="alterarCorFundo()">Alterar cor de fundo do primeiro post.</button>
+
+    <main>
+        <section class="post">
+            <p><strong>Guga Silva</strong> <span>@GugaSilva - 10 min</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci qui inventore similique nulla autem repellendus nisi, ex expedita rerum? Non soluta deleniti voluptate maiores voluptatem pariatur veniam harum quo!</p>
+            <br>
+            <div class="comentarios">
+                <h3>Comentários</h3>
+                <input type="text" name="comentario" id="comentario" placeholder="Digite seu Comentário">
+                <button onclick="addComentario()">Adicionar Comentário</button>
+                <br>
+                <div id="novos-comentarios"></div>
+            </div>
+        </section>
+        <section class="post">
+            <p><strong>Guga Silva</strong> <span>@GugaSilva - 10 min</span></p>
+            <p class="estilo-teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci qui inventore similique nulla autem repellendus nisi, ex expedita rerum? Non soluta deleniti voluptate maiores voluptatem pariatur veniam harum quo!</p>
+            <br>
+            <div class="comentarios">
+                <h3>Comentários</h3>
+                <input type="text" name="comentario" id="comentario" placeholder="Digite seu Comentário">
+                <button onclick="addComentario()">Adicionar Comentário</button>
+                <br>
+                <div id="novos-comentarios"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
