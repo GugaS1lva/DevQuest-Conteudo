@@ -1,5 +1,5 @@
 // Usando o Objeto '.style' para estilizar tags
-function alterarCorFundo(){
+function estilizarPostUm(){
     let posts = document.getElementsByClassName('post')
 
     let primeiroPost = posts[0]
@@ -11,6 +11,27 @@ function alterarCorFundo(){
     primeiroPost.style.textAlign = 'center' // Coisa Linda de CamelCase jEZUIS!!
 }
 
+// Adicionando uma CLASSE na Tag que eu quero estilizar
+function estilizarPostDois(){
+    let postDois = document.querySelector('#specialTag')
+    // O Nome da Classe vai sem o '.'
+    postDois.classList.add('estilo-teste')
+}
 
 
-// Adicionando uma classe na tag que eu quero estilizar
+
+// TESTANDO ESCOLHA DE GÊNERO PELO 'RADIO'
+function marcarRadio(genero){
+    let radioMasculino = document.getElementById('genero-masculino')
+    let radioFeminino = document.getElementById('gereno-feminino')
+
+    if (genero === 'M'){
+        radioMasculino.checked = 'true'
+    
+    } else if (genero === 'F'){
+        radioFeminino.checked = 'true'
+
+    } else {
+        console.log('[ERRO]')
+    }
+}

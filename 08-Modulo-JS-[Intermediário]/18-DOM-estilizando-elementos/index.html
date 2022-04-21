@@ -10,7 +10,10 @@
 <body>
     <h1>| DOM | Estilizando Elementos</h1>
     
-    <button onclick="alterarCorFundo()">Alterar cor de fundo do primeiro post.</button>
+    <button onclick="estilizarPostUm()">Alterar estilos do PRIMEIRO post pelo JS.</button>
+    <br>
+    <br>
+    <button onclick="estilizarPostDois()">Alterar estilos do SEGUNDO post pelo JS.</button>
 
     <main>
         <section class="post">
@@ -27,7 +30,7 @@
         </section>
         <section class="post">
             <p><strong>Guga Silva</strong> <span>@GugaSilva - 10 min</span></p>
-            <p class="estilo-teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci qui inventore similique nulla autem repellendus nisi, ex expedita rerum? Non soluta deleniti voluptate maiores voluptatem pariatur veniam harum quo!</p>
+            <p id="specialTag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci qui inventore similique nulla autem repellendus nisi, ex expedita rerum? Non soluta deleniti voluptate maiores voluptatem pariatur veniam harum quo!</p>
             <br>
             <div class="comentarios">
                 <h3>Comentários</h3>
@@ -38,6 +41,18 @@
             </div>
         </section>
     </main>
+
+    <article>
+        <h2>Escolha seu Gênero</h2>
+
+        <button onclick="marcarRadio('M')">Marcar MASCULINO</button>
+        <button onclick="marcarRadio('F')">Marcar FEMININO</button>
+
+        <br><br>
+
+        Masculino<input type="radio" name="genero" id="genero-masculino">
+        Feminino<input type="radio" name="genero" id="gereno-feminino">
+    </article>
 
     <script src="index.js"></script>
 </body>
