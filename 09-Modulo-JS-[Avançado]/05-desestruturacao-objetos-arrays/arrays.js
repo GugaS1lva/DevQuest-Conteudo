@@ -5,6 +5,6 @@
 
 var numeros = [12, 13, 7, 5, 4, 3, 2, 1]
 
-let [espacoNumerico_01, espacoNumerico_02, ] = numeros
+let [espacoNumerico_01, espacoNumerico_02, , , , espacoNumerico_03 ] = numeros
 
-console.log(`${espacoNumerico_01}\n${espacoNumerico_02}`)
+console.log(`${espacoNumerico_01} \n${espacoNumerico_02} \n${espacoNumerico_03}`)
