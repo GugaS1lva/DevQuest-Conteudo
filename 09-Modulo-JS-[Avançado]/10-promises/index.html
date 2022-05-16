@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+    <style>
+        .promisesPeloYoutube{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Promises</h1>
+    <p>Promises é uma maneira mais moderna de trabalhar com Assincronicidade no JavaScript.</p>
+    <p>A ideia das promisses é trabalhar com Assincronicidade de forma sequencial e também facilitar o tratamento de exceções no código caso haja algum problema.</p>
+
+    <article>
+        <h3>Estados das Promises</h3>
+
+        <p>(1) PENDENTE - É quando a Promise foi criada mas ainda não foi executada.</p>
+        <p>(2) REALIZADA resolve() - É quando a Promisse teve sucesso na sua execução.</p>
+        <p>(3) RECUSADA reject() - É quando teve alguma falha na execução da Promise.</p>
+        <p>(4) ESTABELECIDA - É quando a Promisse foi REALIZADA(2) ou RECUSADA(3)</p>
+
+        <p>OBS: PENDENTE(1) É o estado inicial de toda Promise.</p>
+    </article>
+
+    <article class="promisesPeloYoutube">
+        <h3>PROMISSES</h3>
+
+        <p><mark>PROMISSES</mark> - São como promessas da vida real, ela está esperando algum retorno;</p>
+        
+        <p>Para criar uma Promessa instanciamos a <mark>classe Promisse</mark>;</p>
+        <p>Que leva dois argumentos: <mark>resolve(solução)</mark> e <mark>reject(erro)</mark>;</p>
+        <p>Para encadear mais processos utilizamos o método <mark>then</mark>;</p>
+        <p>Alguns recursos de JS (<mark>Fetch API</mark>) e bibliotecas retornam Promisses;</p>
+    </article>
+    <script src="index.js"></script>
+</body>
+</html>
