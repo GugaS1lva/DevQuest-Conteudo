@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tratamento de Erros</title>
+</head>
+<body>
+    <h1>Tratamento de Erros</h1>
+    <section>
+        <h2>try{}</h2>
+        <h3>● Serve para verificar se houve algum erro. Os códigos ficam dentro das chaves do try. </h3>
+        <p>Ex:</p>
+        <pre>
+            <code>
+                try{
+                    const lorem1 = function(){
+                        alert('Olá, Mundo!')
+                    }
+                    lorem1()
+                }
+            </code>
+        </pre>
+        <p><strong>ATENÇÃO</strong>: Mesmo que uma função(com erros) seja escrita fora do try{}, ele ainda mostra o erro dessa função, desde que a chamada esteja dentro do try. <br>Ex:</p>
+        <pre>
+            <code>
+                const loremFunction(){
+                    alert('Seja bem vindo, Quester Guga!')
+                }
+                try{
+                    loremFunction()
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>catch(error){}</h2>
+        <h3>● Dentro das chaves, os erros do try{} serão tratados.</h3>
+        <p>Ex:</p>
+        <pre>
+            <code>
+                try{
+                    const loremFunction(){
+                        alert('Seja bem vindo, Quester Guga!')
+                    }
+                    loremFunction()
+                } catch(error){
+                    console.log(error)
+        
+                }
+            </code>
+        </pre>
+    </section>
+    <section>
+        <h2>finally{}</h2>
+        <h3>● Serve para executar uma ação final independente da execução do try/catch. O finally{} é muito indicado para fechar uma conexão de banco de dados ou fechar arquivos que foram abertos para leitura, caso contrário, se houver algum erro no try ou no catch, a conexão com o banco ou o arquivo ficarão indefinidamente abertos, podendo gerar erros graves no sistema.</h3>
+        <p>Ex:</p>
+        <pre>
+            <code>
+                try{
+                    const loremFunction(){
+                        alert('Seja bem vindo, Quester Guga!')
+                    }
+                    loremFunction()
+        
+                } catch(error){
+                    alert('Erro de funcionamento. O erro rolou aqui:')
+                    console.log(error)
+        
+                } finally{
+                    alert('Vamos consertar tudo, ficará tudo bem muito em breve.
+                    Curta nosso joguinho enquanto isso:')
+        
+                    jogoDaCobrinha()
+                }
+            </code>
+        </pre>
+    </section>
+    <section>
+        <h2>throw</h2>
+        <h3>● Tradução: "Arremeçar"/"jogar" um erro pro catch. "Cria exceções". </h3>
+        <p>Exemplo no código JS completo.
+            <br>Manter tudo como está o script roda normalmente.
+            <br>Alterar os valores booleanos true para false vai estourar o erro 001.
+            <br>Alterar os valores das variáveis de Boolean para numeric ou qualquer outro vai estourar o erro 002 -> twrow.
+            </p>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
