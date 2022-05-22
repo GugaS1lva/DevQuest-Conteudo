@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    border: 2px solid black;
+    background-color: #C4C4C4;
+    color: black;
+    padding: 15px;
+    text-shadow: 2px 2px 8px black;
+    border-radius: 5px;
+}
+
+section{
+    background-color: #C4C4C4;
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
