@@ -1,0 +1,19 @@
+{
+  "name": "guga_npm",
+  "version": "1.0.0",
+  "description": "Meu primeiro pacote npm. Projeto criado durante o módulo de JavaScript Avançado do curso DevQuest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "npm",
+    "guga"
+  ],
+  "author": "Guga Silva",
+  "license": "ISC",
+  "dependencies": {
+    "kind-of": "^6.0.3"
+  }
+}
