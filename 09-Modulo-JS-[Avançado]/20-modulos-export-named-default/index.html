@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulos</title>
+</head>
+<body>
+    <h1>Export Named & Default</h1>
+    
+    <section>
+        <h3>Export Named</h3>
+        <p>Exatamente como no exemplo anterior.
+            <br><li>Criar as funções dentro de um arquivo .js separado</li>
+            <br><li>No final do .js separado, usar o escopo do 'export named': <br><img src="images/01.png" alt=""></li>
+            <br><li>No arquivo desejado, usar o escopo do 'import'. OBS: Não esquecer do '.js' no final do caminho do arquivo das funções. <br>Nesse mesmo arquivo, abaixo do import, já é possível fazer apenas a chamada das funções e elas se ativarão sozinhas. <br><img src="images/02.png" alt=""></li>
+            <br><li>Na chamada HTML do arquivo onde os módulos .js foram importados, não esquecer de declarar o tipo da chamada: <br><img src="images/03.png" alt=""></li>
+        </p>
+    </section>
+
+    <section>
+        <h3>Export Default</h3>
+        <p>Pouco usado. Se quiser aprender, assista a aula novamente [JS Avançado - Ultima Aula]. :)</p>
+    </section>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
