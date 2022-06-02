@@ -21,7 +21,7 @@
 6° - Criar as pastas que a documentação pedir.
 	OBS: O arquivo com a extensão .test.js será onde ficará armazenado os códigos de teste
 
-7° - Escrever os testes.
+7° - Escrever os testes. 
 
 8° - Adicionar uma seção no package.json (no nodo "scripts":{}) ["test": "jest"]
 	OBS: Quando rodar o npm run a seção "scripts":{} vai executar todos os códigos que tiver ali dentro.
