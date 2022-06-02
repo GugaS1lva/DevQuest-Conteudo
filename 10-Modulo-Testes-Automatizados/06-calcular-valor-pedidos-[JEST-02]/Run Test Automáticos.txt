@@ -1,0 +1,12 @@
+Como fazer os testes rodarem automaticamente a cada alteração que for feita no código.
+
+OBS: --watch só funciona se for um repositório no github. UTILIZE O --watchAll NO LUGAR DO WATCH COMUM PARA FUNCIONAR FORA DO REPOSITÓRIO GITHUB.
+
+1° - Ir no nodo de "scripts":{} do package.json e adicionar um novo comando: 
+	"watch": "jest --watch *.js" 
+		1.1° - "watch": => Ficar observando/assistindo.
+		1.2° - "jest --watch => Argumento que passamos pro jest para ficar vigiando nossos arquivos.
+		1.3° - .js => São os arquivos que serão afetados pelo meu comando
+		1.4° - *.js => Globaliza o comando para todos os arquivos que contiverem .js no final.
+
+2° - No Bash => npm run watch
