@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section p{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Instruções</title>
+</head>
+<body>
+    <h1>[Desafio: Criar testes automatizados para o projeto "Carrinho de Compras"]</h1>
+    <p>RELEMBRANDO: Esse é um teste de unidade. <br>UNIDADE -> Testa essa unidade (que é uma função) de forma isolada pra garantir que o comportamento dela está do jeito que eu quero.</p>
+
+    <section>
+        <h2>Passos:</h2>
+        <ul>
+            <li>
+                <h3>1° - No arquivo das FUNCIONALIDADES, EXPORTAR as funções que serão testadas.</h3>
+            </li>
+            <img src="images/01.png" alt="Anatomia do EXPORT">
+            <p>module >>> Módulo</p>
+            <p>.exports >>> Funcionalidade do 'module'</p>
+            <p>= >>> Sinal de atribuição</p>
+            <p>totalPedidos >>> Nome da função OBS: SEM PARÊNTESES</p>
+
+            <li>
+                <h3>2° - No arquivo dos TESTES, IMPORTAR as funções que serão testadas.</h3>
+            </li>
+            <img src="images/02.png" alt="Anatomia do IMPORT">
+            <p>const >>> Variável</p>
+            <p>totalPedidos >>> Nome da função OBS: SEM PARÊNTESES</p>
+            <p>= >>> Sinal de atribuição</p>
+            <P>require() >>> Funcionalidade</P>
+            <p>require('Caminho do arquivo das funções') OBS: Não precisa especificar o .js no final do caminho do arquivo-funções</p>
+
+            <li>
+                <h3>3° - Criar a estrutura inicial do teste</h3>
+            </li>
+            <img src="images/03.png" alt="Anatomia do TEST">
+            <p>it() >>> Funcionalidade</p>
+            <p>it('Mensagem para quando o teste for true', () => {}) >>> 'msg' + Arrow Function</p>
+            <p>it('msg' () => {expect(true).toBe(true)}) >>> Esperando que (true) seja (true)</p>
+
+            <li>
+                <h3> 4° - Revisar o fluxo das funções do arquivo-funções.</h3>
+            </li>
+
+            <li>
+                <h3>5° - Escolher um primeiro fluxo dos vários fluxos existentes no arquivo-funções e depois pensar numa boa mensagem para mostrar quando teste for True, ou seja, pensar num bom nome pro teste - um nome descritivo para o que ele está testando.</h3>
+            </li>
+
+            <li>
+                <h3>6° - AAA -> 3 Passos da criação de um teste. <br>Colocar os objetos/coisas dentro da parte dos objetos/coisas.</h3>
+                <p>ARRANGE >>> ARRUMAR - [OBJETO DE TESTE] -> Organizar uma coisa/objeto/array</p>
+                <P>ACT >>> AGIR - [O QUE SERÁ TESTADO] -> O que será realmente testado</P>
+                <p>ASSERT >>> ASSERÇÃO - [QUAL O RESULTADO ESPERADO] -> Qual o resultado esperado</p>
+                <p>OBS: Aqui você pode criar um 'pedido'/objetos quaisquer, desde que dentro do escopo correto, para testar o quanto quiser. </p>
+            </li>
+
+            <li>
+                <h3>7° - Para o expect() funcionar, a função que está sendo testada tem que retornar alguma coisa. No nosso caso, essa função vai retornar o valor final do carrinho de compras. <br>Jogar o resultado dessa função para dentro de uma variável. <br>NOTA: mantendo o cursor em cima da função + F12 >>> Vai entrar direto na função. Atalho TOPZERA.</h3>
+            </li>
+
+            <li> 7°.2 - Então, atribuimos à const 'totalCarrinho' a função 'totalPedidos()' passando por parâmetro da mesma o array de itens que está em 'meuPedido'.</li>
+            <img src="images/04.png" alt="">
+
+            <li>
+                <h3>8° - Substituir o 'expect(true).toBe(true)' pelo que você quer testar.</h3>
+            </li>
+
+            <li>
+                <h3>8°.2 - Fim do primeiro fluxo de teste.</h3>
+            </li>
+            <img src="images/05.png" alt="Fim fluxo 1">
+
+            <li>
+                <h3>9° - Partir pro segundo fluxo de teste. <br>Fim do segundo fluxo de teste.</h3>
+            </li>
+            <img src="images/06.png" alt="Fim fluxo 2">
+
+            <li>
+                <h3>10° - Partir pro terceiro fluxo de teste. <br>Fim do terceiro fluxo de teste.</h3>
+            </li>
+            <img src="images/07.png" alt="Fim fluxo 3">
+        </ul>
+
+        <section>
+            <h2>Resultado dos testes no Bash do VScode</h2>
+            <img src="images/res.png" alt="Resultado dos Testes">
+        </section>
+
+        <section>
+            <h2>MAP</h2>
+            <img src="images/MAP.png" alt="MAP">
+        </section>
+    </section>
+</body>
+</html>
