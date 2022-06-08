@@ -1,0 +1,3 @@
+Desafio: Atualize o bloco de condições if else para o operador ternário.
+
+Utilize o watch (aprendido anteriormente) para refatorar seu código com qualidade, sempre observando se o novo trecho de código não está com erros.
