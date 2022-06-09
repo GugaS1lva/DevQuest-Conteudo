@@ -1,0 +1,6 @@
+Quando houver uma nova funcionalidade para ser adicionada (Ex: Para estados muito longe, cobrar um adicional de 30% no valor padrão da entrega [RS e SC]), você pode escolher entre escreve-la direto pelo arquivo das funções ou direto pelo arquivo dos testes.
+
+ADD nova funcionalidade pelo arquivo dos testes >>> TDD - Test Driven Development (Desenvolvimento Orientado ao Teste)
+Conceito de Red Green Refactor
+
+Baby-Steps: O desafio pede pra cobrar um adicional de 30% no valor padrão da entrega caso o pedido seja do Rio Grande do Sul ou de Santa Catarina. O conceito de Baby-Steps é exatamente sobre fazer pequenos passos, adicionando micro-funcionalizades por vez, afim de evitar dar início a uma refatoração desnecessariamente complexa. Ex: criar primeiro o adicional para RS e só depois que funcionar, criar essa funcionalidade para SC.

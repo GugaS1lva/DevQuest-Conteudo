@@ -1,0 +1,20 @@
+{
+  "name": "guga_jest",
+  "version": "1.0.0",
+  "description": "Primeiros testes com JEST num projeto simples.",
+  "main": "calcular-valor-pedidos.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll *.js"
+  },
+  "keywords": [
+    "npm",
+    "guga",
+    "first"
+  ],
+  "author": "Guga Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
