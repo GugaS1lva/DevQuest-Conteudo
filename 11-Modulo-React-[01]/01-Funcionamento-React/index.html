@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React - Funcionamento React</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-color: lightskyblue;
+            margin: 100px 20px;
+            padding: 50px;
+            border-radius: 15px;
+        }
+
+        span{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <section>
+        <h2><span>React - Funcionamento React</span></h2>
+
+        <ul>
+            <li>No arquivo HTML, deve existir uma <span>div</span> com um <span>id root</span>. <br>Tudo que for adicionado, vai ser adicionado dentro da div root sem precisar recarregar o arquivo HTML inteiro.<br> Esse é o conceito de <span>SPA</span> -> <span>S</span>ingle <span>P</span>age <span>A</span>pplication</li>
+
+            <br>
+
+            <li>Importe a biblioteca React pelo link: <br><a href="https://pt-br.reactjs.org/docs/cdn-links.html" target="_blank">React Documentation</a></li>
+
+            <br>
+
+            <li>Capture o a div root pelo JS: <br><img src="images/root.png" alt="root"></li>
+
+            <br>
+
+            <li>Crie tags utilizando propriedades do React: <br><img src="images/p.png" alt="p">
+                <br><span>React</span> >>> Informa pro js que você vai utilizar ferramentas da Biblioteca. 
+                <br><span>.createElement()</span> >>> Propriedade que cria tags HTML. 
+                <br><span>('tag', propriedadesDaTag, 'Conteúdo...')</span> >>> Primeiro a tag, depois o id/class por exemplo e por ultimo o conteúdo da tag.
+            </li>
+            
+            <br>
+
+            <li>Renderize o que você criou: <br><img src="images/render.png" alt="render">
+                <br><span>ReactDOM</span> >>> Informa pro js que você vai utilizar ferramentas da Biblioteca.
+                <br><span>.render()</span> >>> Propriedade que renderiza suas criações React.
+                <br><span>(criação, localDaCriação)</span> >>> Primeiro sua tag, depois o local onde ela vai ser renderizada.</li>
+        </ul>
+    </section>
+    
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
