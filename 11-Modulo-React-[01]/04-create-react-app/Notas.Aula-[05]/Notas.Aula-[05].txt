@@ -1,0 +1,8 @@
+O <create-react-app> baixa as principais bibliotecas pras Aplicações React (react, reactDOM, babel, etc...), cria uma estrutura de pastas padrão, enfim, monta um ambiente de desenvolvimento muito mais rápido.
+- Iniciar a pasta com o Bash
+- npx create-react-app nome-do-projeto >>> Gera o projeto já com um nome
+- [Prestar atenção nos comandos finais após a criação do react-app]
+	- cd nome-do-projeto >>> Entra na pasta
+	- npm start >>> Inicia o projeto
+	- code . >>> Abre o vscode
+- 

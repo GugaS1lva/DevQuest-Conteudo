@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas.Aula-[06]</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        article{
+            background-color: lightskyblue;
+            margin: 15px;
+            padding: 25px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        span{
+            background-color: rgb(19, 100, 96);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com componentes de função</h1>
+    
+    <section>
+        <article>
+            <h2>Return com Parênteses:</h2>
+            <img src="./images/return-parenteses.png" alt="">
+            <p>Faz com que possa ser escrito código JSX dentro do JS</p>
+            <p>JSX num return SÓ ACEITA UMA ÚNICA DIV PAI por return.</p>
+        </article>
+
+        <article>
+            <h2>Conceito <mark>Fragment</mark>:</h2>
+            <img src="./images/fragment.png" alt=""><br>
+            <a href="https://pt-br.reactjs.org/docs/fragments.html" target="_blank">Fragment Documentation</a>
+            <p>Div "fantasma". No HTML, não mostra que foi criado nenhuma div pai e o JSX continua entendendo que há um único elemento envolvendo todos os outros elementos do return.</p>
+        </article>
+
+        <article>
+            <h2>Criando um Componente:</h2>
+            <ul>
+                <li>Organize suas pastas (components > button > botao.js) <br><img src="images/pastas.png" alt=""></li>
+                <br>
+                <li>Crie o componente seguindo os passos abaixo: <br><img src="images/escrevendo-componente.png" alt=""></li>
+                <br>
+                <li>Importe o componente no projeto: <br><img src="images/importando-componente.png" alt=""></li>
+                <br>
+                <h3>Importação</h3>
+                <li>[01] - SEM Self-Close: <br><img src="images/sem-self.close.png" alt=""></li>
+                <li>[02] - COM Self-Close: <br><img src="images/com-self.close.png" alt=""></li>
+                <p>OBS: Cuidado com o Self-Close em tags que contenham elementos. Self-Close só funciona para tags sem elementos.</p>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Estilizando o Componente:</h2>
+            <ul>
+                <li>Organize suas pastas (components > button > botao.css) <br><img src="images/pastas-02.png" alt=""></li>
+                <br>
+                <li>Estilize sua nova classe/id: <br><img src="images/estilo-componente.png" alt=""></li>
+                <br>
+                <li>Importe sua nova classe/id no arquivo da tag: <br><img src="images/importando-estilo-componente.png" alt=""></li>
+                <br>
+                <li>Adicione sua nova classe/id na tag: <br><img src="images/add-class.png" alt=""></li>
+                <p>OBS: UTILIZAR: <span>className=" "</span> <br>Usar apenas <span>class=" "</span> é contra-indicado.</p>
+            </ul>
+        </article>
+    </section>
+</body>
+</html>

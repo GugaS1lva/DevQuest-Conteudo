@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas.Aula-[08]</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            background-color: lightskyblue;
+            padding: 25px;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        section h2{
+            text-shadow: 4px 4px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Props - Props são propriedades que são passadas para os componentes.</h1>
+
+    <section>
+        <h2>Adicionando um texto específico num componente apartir do uso de PROPS:</h2>
+        <ul>
+            <li>propriedade='Valor' >>> Definindo a PROP: <br><img src="images/definindo-props.png" alt=""></li>
+            <br>
+            <li>>>> Acessando o componente onde a prop foi inserida: <br><img src="images/acessando-tag.png" alt=""></li>
+            <br>
+            <li>this; this.props; this.props.paragraph; >>> Verificando onde está a nova PROP. 
+                <br>Adicionando a nova PROP no componente. 
+                <br>OBS: ENTRE CHAVES. Precisa das chaves pra informar que é um código JS.
+                <br><img src="images/adicionando-propos.png" alt=""></li>
+            <br>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Add texto usando PROPS - Segunda Forma:</h2>
+        <ul>
+            <li>Mesmo componente anterior escrito usando Frunções: <br><img src="images/props-com-funcoes.png" alt=""></li>
+            <br>
+            <li>OBS: Não existe 'this' numa função: <br><img src="images/passoAPasso.png" alt="">
+                <br> 1 - Informe um novo parâmetro pra Arrow Function.
+                <br> 2 - Remova o this.
+            </li>
+            <br>
+            <li>SHORTHAND NOTATION: <br><img src="images/shorthand-notation.png" alt="">
+                <br> 1 - Colocar DENTRO DE CHAVES o novo parâmetro da Arrow Function.
+                <br> 2 - Substituir o nome do primeiro objeto pelo nome do objeto que quer estilizar - Substituí o 'props' pelo próprio 'paragraph' (que é a propriedade que vai ser inserida no componente).
+                <br> 3 - Despreza o uso do props. restando apenas a própria propriedade que vai ser inserida no componente.
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
