@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas.Aula-[10]</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Default PROPS - Propriedades Padrão</h1>
+    <p>Uma forma de inicializar algumas propriedades dos componentes com valores padrão. <br>Famoso Call Back</p>
+
+    <section>
+        <h2>Adicionando Propriedades Default aos Componentes</h2>
+        <ul>
+            <li>Adicionando um Label + novo texto que será exibido: <br><img src="images/add-label.png" alt=""></li>
+            <br>
+            <li>Passando PROPS por parâmetro da Arrow Function do componente: <br><img src="images/add-parametros.png" alt=""></li>
+            <br>
+            <li>Informando o caminho para o JS. <br>OBS: NÃO ESQUEÇA DAS CHAVES. <br><img src="images/add-caminho.png" alt=""></li>
+            <br> Resultado >>> <br><img src="images/result.png" alt="">
+
+            <br>
+            <h3>Evitando que o texto do label ('Texto Call-Back') entre em conflito com o texto do componente ('Click-Me')</h3>
+            <br>
+
+            <li>Adicionando Default Props: <br><img src="images/add-defaultProps.png" alt=""></li>
+            <br> Resultado >>> <br><img src="images/result-02.png" alt="">
+            <br><p>Apenas o primeiro button tem o label definido no App.js os outros dois não.</p><p>Se não houver um label na tag button do App.js por padrão, vai ser adicionada o label do Button.defaultProps, como mostra no exemplo acima.</p>
+            <br>
+            <li>Adicionando mais de uma Default Props: <br><img src="images/add-mais-defaultProps.png" alt=""></li>
+
+            <br>
+            <h3>Default Props com CLASSES:</h3>
+            <br>
+
+            <li>Adicionando defaultProps com Class. Estrutura da Class + this.props.label: <br><img src="images/add-defaultProps-classe.png" alt=""></li>
+            <br>
+            <li>OBS: <br>Por padrão, vem assim: <br><img src="images/padrao.png" alt=""></li>
+            <br>
+            <li>Extraindo SHORTHAND: <br><img src="images/shorthand.png" alt="">
+            <br>Adiciona uma vírgula ao lado do React, entre parênteses acessa o {Component}. Em baixo, remove o React.
+            </li>
+        </ul>
+    </section>
+    
+</body>
+</html>
