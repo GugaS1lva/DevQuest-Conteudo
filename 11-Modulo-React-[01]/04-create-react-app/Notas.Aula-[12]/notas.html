@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas.Aula-[12]</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas React</h1>
+
+    <h3>Código Antigo: <br><img src="images/old-code.png" alt=""></h3>
+
+    <h3>Refatorando códigos repetidos</h3>
+    <ul>
+        <li>Criando um array com os títulos: <br><img src="images/ArrayDeTitulos.png" alt=""></li>
+        <br>
+        <li>Removendo os elementos: <br><img src="images/removendo.png" alt=""></li>
+        <br>
+        <li>Iterando sobre um Array usando o map(): <br><img src="images/iterando-sobre-array.png" alt=""></li>
+        <br>
+        <li>Adicionando parâmetros ao map. Arrow Funcion: <br><img src="images/transformandoEmArrowFunctionDentroDoMap.png" alt=""></li>
+        <br>
+        <li>Return (com parênteses para aceitar o JSX) + Criando a estrutura: <br><img src="images/Estrutura.png" alt=""></li>
+        <br>
+        <li>Adicionando título formatado com o map(): <br><img src="images/formatando.png" alt=""> <br>OBS: USAR CHAVES</li>
+        <br>
+        <br>
+    </ul>
+    <h3>ATENÇÃO: Cada filho na lista deve ter uma propriedade (prop) "key" única - como se fosse um id para cada item de uma lista.</h3>
+    <ul>
+        <li>Adicionando a prop key={} com uma lista dentro (a própria lista de títulos): <br><img src="images/key-01.png" alt="">
+            <br>Porém, essa não é uma boa prática, pois se algum item da lista tiver os mesmos caracteres de outro item dessa mesma lista, a aplicação entrará em conflito.
+        </li>
+        <br>
+        <li>O map, também retorna o index de uma lista, então da pra usar esse array nas key's: <br><img src="images/key-02.png" alt=""></li>
+    </ul>
+</body>
+</html>
