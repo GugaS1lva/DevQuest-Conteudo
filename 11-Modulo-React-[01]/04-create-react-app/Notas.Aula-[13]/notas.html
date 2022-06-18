@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas.Aula-[13]</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos no React</h1>
+    
+    <section>
+        <h2>Evento de click</h2>
+        <ul>
+            <li>onClick={} >>> Atenção ao local onde vai colocar o onClick, deve ser escrito dentro do componente, não na chamada dele. <br> A sintaxe + local do arquivo estão logo abaixo: <br><img src="images/local.png" alt=""></li>
+            <br>
+            <li>onClick={sayHello} >>> Chamar o método que será executado quando o botão for pressionado. <br> Esse método apenas diz 'olá'. <br><img src="images/sayHello.png" alt=""></li>
+            <br>
+            <li>Criando o  método sayHello >>> Lembrar de deixar o método dentro de uma Arrow Function, se não o click não funcionará e o script só rodará uma vez: <br> Escopo do método: <br><img src="images/metodo.png" alt=""></li>
+            <br>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Eventos atravéz das PROPS. Passando eventos como PROPS pra dentro de um componente</h2>
+        <ul>
+            <li>Adicionando css-inline no componene React: <br><img src="images/css-inline-react.png" alt="">
+                <br>Lembrar de inicializar como um objeto (chaves amarelas dentro das chaves do style=).
+                <br>Lembrar de usar CamelCase para a escrita das propriedades.
+                <br>Lembrar de colocar os valores dentro de áspas.
+            </li>
+            <br>
+            <li>Passando 'color' por parâmetro pra Arrow Function: <br><img src="images/parametro.png" alt=""> 
+                <br>OBS: Vai pegar o estilo padrão que foi definido no arquivo css desse componente. Se não houver um arquivo css, não vai pegar estilo.
+            </li>
+            <br>
+            <li>Criando uma DefaultProp que acesse o componente: <br><img src="images/default-prop-color.png" alt=""></li>
+            <br>
+            <li>Criando mais um Card para exemplificar: <br><img src="images/new-card.png" alt=""><img src="images/resultado.png" alt=""></li>
+            <br>
+            <li>Estilizando apenas esse novo Card: <br><img src="images/new-card-color.png" alt=""><img src="images/resultado-02.png" alt=""></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Criando um evento de click que captura a cor do Card</h2>
+        <ul>
+            <li>Adicionando o escopo da função: <br><img src="images/add-escopo.png" alt=""> <br>OBS: Isso foi criado no componente Cards.js</li>
+            <br>
+            <li>Criando uma Prop ([02] - Pode usar qualquer nome) que chama a função que foi criada acima: <br><img src="images/add-prop.png" alt="">
+                <br>[01] - Atenção pra adicionar a Prop dentro dos parâmetros do Card
+                <br>[02] - A Prop pode ser nomeada com qualquer nome, mas seja coeso.
+                <br>[03] - A Prop acima deve executar a chamada da função criada anteriormente. Não usar parênteses.
+            </li>
+            <br>
+            <li>Ligando a Prop com os cartões. OBS: No arquivo dos cartões, dentro dos parâmetros da Arrow Function, deve haver a Prop: <br><img src="images/add-param.png" alt=""></li>
+            <br>
+            <li>Adicionando o evento de click: <br><img src="images/add-onclick.png" alt="">
+                <br>[01] - Adicionando o evento
+                <br>[02] - Dentro do evento de click, criar uma Arrow Function para evitar que tudo seja executado assim que o site for carregado
+                <br>[03] - Dentro da Arrow Function, chamar a função de mostrar a cor do Cartão
+                <br>[04] - Lembrar de usar os parênteses na chamada da função
+            </li>
+            <br>
+            <li>Passando para a função o parâmetro 'color': <br><img src="images/add-color.png" alt=""></li>
+            <br>
+            <li>Passando para a função o parâmetro 'color': <br><img src="images/add-color-02.png" alt="">
+                <br>Guia - Navegar para o arquivo da função
+                <br>[01] - Passar 'color' por parâmetro para a função showCardColor()
+                <br>[02] - Capturar a informação de alguma forma. Nesse caso foi pelo console.log, então deve ser passado 'color' para ele também.
+            </li>
+            <br>
+            <li>Resultado Final: <br><img src="images/resultado-03.png" alt=""></li>
+        </ul>
+    </section>
+
+    
+</body>
+</html>
