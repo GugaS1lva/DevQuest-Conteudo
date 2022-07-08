@@ -1,0 +1,11 @@
+.panel{
+    background: url(../../images/panel.jpg) center center no-repeat;
+    width: 100%;
+    height: 425px;
+    background-size: cover;
+    color: white;
+    line-height: 425px;    
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
