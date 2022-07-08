@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stateless vs Statefull</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .marca-texto-01{
+            background-color: darkcyan;
+            color: white;
+            line-height: 23px;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .marca-texto-02{
+            background-color: darkred;
+            color: white;
+            line-height: 23px;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stateless vs Statefull</h1>
+    
+    <h3>Stateless (Sem Estado):</h3>
+    <ul>
+        <li>São Componentes que trabalham só com propriedades (props) e não trabalham com estado.</li>
+        <li>São considerados Componentes sem lógica complexa.</li>
+        <li>Servem muito mais pra renderizar componentes na tela e terão sua "lógica" toda em torno de suas próprias props.</li>
+        <li>São bem fáceis de ler, entender e testar (ao menos deveriam ser).</li>
+    </ul>
+
+
+    <h3>Statefull (Com Estado):</h3>
+    <ul>
+        <li>São Componentes que podem ter tando propriedades/props quanto estado/state.</li>
+        <li>Geralmente são responsáveis pela comunicação entre cliente-servidor, processando dados e respondendo aos eventos dos usuários (ex: consumindo API e trazendo uma lista de usuários pra mostrar na tela).</li>
+        <li><span class="marca-texto-01">Esse tipo de Lógica deve ser encapsulada em um número pequeno de Componentes Statefull</span> <br><span class="marca-texto-02">enquanto que toda a Lógica de formatação e visualização deve ser transferida pro máximo de Componentes Stateless possível.</span></li>
+    </ul>
+
+</body>
+</html>
