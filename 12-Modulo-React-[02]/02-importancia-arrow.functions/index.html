@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importância das Arrow Functions</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .marca-texto{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Importância das Arrow Functions</h1>
+    
+    
+    <h3>No exemplo da aula anterior, o <span class="marca-texto">this</span> tem seu escopo alterado, se usado em uma Function no lugar da ArrowF. </h3>
+
+    <p>Abaixo, vemos que o <span class="marca-texto">this</span> que está dentro da Arrow-Function, alcança os dados que estão dentro do <span class="marca-texto">constructor</span> e os mostra dentro do <span class="marca-texto">h2</span>. <br><img src="images/arrow-function.png" alt=""></p>
+    <br>
+    <br>
+    <p>Porém, abaixo, vemos que o <span class="marca-texto">this</span> que está dentro de uma simples Function, tem seu escopo alterado e o <span class="marca-texto">this</span> alcança apenas a sua própria função e como não há nenhum parâmetro dentro da função, ele retorna undefined pro <span class="marca-texto">h2</span> que então retorna um erro fatal, encerrando minha aplicação. <br><img src="images/function.png" alt=""></p>
+
+</body>
+</html>
