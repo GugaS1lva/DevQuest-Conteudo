@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifecycle ou Ciclo de Vida de um Componente React</title>
+</head>
+<body>
+    <h1>Lifecycle ou Ciclo de Vida de um Componente React</h1>
+
+    <h2><a href="https://pt-br.reactjs.org/docs/react-component.html" target="_blank">Documentation</a></h2>
+
+    <h3>O Componente React vai ter 4 fases:</h3>
+    <ul>
+        <li>Inicialização do Componente: 
+            <br>Na fase de Inicialização, como o nome já diz, o Componente React se prepara pra sua Inicialização. Geralmente aqui ele vai configurar os estados iniciais, usando o objeto STATE ou PROPS-PADRÕES, se houverem.
+        </li>
+
+        <li>Montagem do Componente: 
+            <br>Aqui ele está pronto pra ser montado no DOM do navegador. Nessa fase o componente vai seguir o seguinte fluxo de métodos:
+                <ul>
+                    <li>constructor()</li>
+                    <li>getDerivedStateFromProps()</li>
+                    <li>render()</li>
+                    <li>componentDidMount()</li>
+                </ul>
+        </li>
+
+        <li>Atualização do Componente: 
+            <br>Essa fase começa quando o Componente React já nasceu no navegador e cresce recebendo novas atualizações. Os métodos que são chamados nessa fase são:
+                <ul>
+                    <li>getDerivedStateFromProps()</li>
+                    <li>shouldComponentUpdate()</li>
+                    <li>render()</li>
+                    <li>getSnapshotBeforeUpdate()</li>
+                    <li>componentDidUpdate()</li>
+                </ul>
+        </li>
+
+        <li>Desmontagem do Componente: 
+            <br>Nessa fase, o componente não é mais necessário e vai ser desmontado/retirado do DOM. O método que se chama nessa fase é:
+                <ul>
+                    <li>componentWillUnmount()</li>
+                </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>
