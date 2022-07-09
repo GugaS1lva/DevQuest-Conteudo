@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifecycle React na Prática</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lifecycle React na Prática</h1>
+    
+    <h2>OBS: Vamos precisar atualizar o projeto anterior. Todas as atualizações de código ficarão salvas apenas nos prints dessa aula, estude com atenção.</h2>
+    <hr>
+    <br>
+    <br>
+    <h3>Starting:</h3>
+    <ul>
+        <li>Criando um novo componente (pasta + arquivo.js) <strong>deck-of-cards</strong>:
+            <br><img src="imagens/criando-component.png" alt="">
+        </li>
+        <br>
+        <li>Escrevendo o escopo do componente: <br><img src="imagens/esqueleto-component.png" alt=""></li>
+        <br>
+        <li>Impotando e usando o componente: <br><img src="imagens/importando-component.png" alt=""></li>
+        <br>
+        <li>Fazendo a primeira requisição na API de cards. O ideal aqui seria criar uma pasta separada pro tratamento dos serviços js, mas como é só um exemplo vamos fazer tudo dentro do mesmo componente. Fazendo Requisição: <br><img src="imagens/requisicoes.png" alt=""></li>
+        <br>
+        <li>Criando o método que vai pegar a lista de cartas e vai atualizar o meu state (ATENÇÃO PRO LUGAR ONDE O MÉTODO DEVE SER CHAMADO): <br><img src="imagens/didMount.png" alt=""> 
+            <br>O componentDidMount(){} é chamado quando o componente for montado/apresentado na tela.
+        </li>
+        <br>
+        <li>Chamando as duas requisições, feitas com o fetch, dentro do componentDidMount(){}: <br><img src="imagens/chamando-fetch.png" alt=""></li>
+        <br>
+        <li>Criando um array vazio para as cartas + mandando os dados atualizados (feitos pelos fetchs) pra dentro do mesmo state, cumprindo assim, uma atualização de estados pro meu componente: <br><img src="imagens/preparando-terreno.png" alt=""></li>
+        <br>
+        <li>Apresentando tudo na tela: <br><img src="imagens/mostrando-em-tela.png" alt=""> 
+            <br>1- Tudo entre chaves porque vai escrever código JS.
+            <br>2- Fazer um map dos cards pra percorrer e criar um novo array.
+            <br>2.2 - O map precisa de cada carta (card) e da posição de cada carta (index) por causa do Key=.
+            <br>3 - Retornar um &lt;li&gt; (com o key) e com o conteúdo de cada item como sendo uma imagem (também com o key).
+            <br>4 - O src= da img vai ser a 'card.image', a própria imagem de dentro do objeto.
+            <br>5 - O alt também está dentro do objeto, é só uma string com o nome de cada carta.
+        </li>
+    </ul>
+    <hr>
+    <h3>Resumindo Tudo:</h3>
+    <ul>
+        <li>Criando um componente "DeckOfCards"</li>
+        <li>Inicializando o componente com um estado como sendo um objeto e dentro tem um array de cartas vazio</li>
+        <li>Montando o componente com o "componentDidMount"</li>
+        <li>Quando ele for montado, chama o "createDeck()", que é uma função e vai buscar um baralho da API e nos retornar o id desse baralho.</li>
+        <li>Logo depois, ainda dentro do DidMount, chama o "getCards(deckId)" passando o "deckId" por parâmetro (Esse "deckId" é o ID do baralho da função de cima, é o ID do "createDeck()"). O getCards() retorna todas as informações das 52 cartas do baralho de cartas que foi gerado acima.</li>
+        <li>Preenchendo o estado vazio do array 'cards: []' com as informações que vieram do getCards(). Crie um novo this.setState() para isso.</li>
+        <li>Colocando tudo na tela. Primeiro temos uma section, com uma ul e dentro tem um código JS (as chaves {}).</li>
+        <li>O código JS cria um novo array com o map que retorna uma lista de li's com a imagem das cartas lá dentro. OBS: Lembre-se do index key= pra todos os filhos do map. </li>
+    </ul>
+
+    <h4>E esse é o ciclo de vida do componente:
+        <br>1 - o Constructor seta os estados iniciais do componente
+        <br>2 - o Reder manda renderizar o componente no DOM
+        <br>3 - o componentDidMount atualiza os estados do componente
+        <br>4 - o Render renderiza o componente de novo mas com as informações todas atualizadas
+        <br><img style="border: 2px solid black;" src="imagens/criclo.png" alt="">
+    </h4>
+</body>
+</html>
