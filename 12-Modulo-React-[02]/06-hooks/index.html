@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hooks</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 870px;
+        }
+        h4{
+            margin-left: 20px;
+        }
+
+        .cis-green{
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_red{
+            background-color: darkred;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_blue{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hooks | Ganchos</h1>
+    <h2><a href="https://pt-br.reactjs.org/docs/hooks-overview.html" target="_blank">Documentation</a></h2>
+
+    <h4>● Hooks nos permite trabalhar com State e com LifeCycle sem usar componentes de classe.</h4>
+    <h4>● Hooks são funcções que permitem você a você "ligar-se" aos recursos de State e LifeCycle à partir de componentes funcinais.</h4>
+    <h4>● É importante saber que os Hooks <span class="cis-dark_red">NÃO FUNCIONAM DENTRO DE CLASSES</span></h4>
+    <h4>● <span class="cis-green">É como se o React ficasse ouvindo modificações no State e executasse alguma ação (geralmente chamar alguma função ou executar algum trecho de código) quando o estado mudasse.</span></h4>
+    
+    <hr>
+    <h2>Os Dois tipos de Hooks mais importantes:</h2>
+
+    <h3>Hook de Estado - <span class="cis-dark_blue">useState()</span></h3>
+    <p>useState feito com Classe vs feito com Função:</p>
+    <img src="images/useState.png" alt="">
+    
+    <br>
+    <br>
+    
+    <h3>Hook de Efeito - <span class="cis-dark_blue">useEffect()</span></h3>
+    <p>o Hook de efeito te permite executar efeitos colaterais em componentes funcionais. A gente usa esse Hook pra trabalhar com o LifeCycle, pra isso a gente vai usar o método useEffect(). 
+        <br>Ele vai ser chamado sempre que o componente for montado e/ou atualizado.
+    </p>
+    <img src="images/useEffect.png" alt="">
+
+    <hr>
+    <h2>REGRAS:</h2>
+    <ul>
+        <li><strong>Não chame Hooks dentro de Loops, Condições ou Funções Aninhadas.</strong></li>
+        <li><strong>Apenas chame Hooks de Componentes Funcinais. Não chame Hooks de Funções JS comuns.</strong></li>
+    </ul>
+</body>
+</html>
