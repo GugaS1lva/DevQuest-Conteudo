@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hooks na Prática</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cis-green{
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_red{
+            background-color: darkred;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_green{
+            background-color: darkgreen;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_blue{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hooks na Prática</h1>
+
+    <h3>Refatorando o componente de <span class="cis-dark_red">Class sem Hooks</span> para um componente de <span class="cis-dark_green">Função com Hooks</span>.</h3>
+
+    <section>
+        <h4>Definindo o estado inicial do componente:</h4>
+
+        <ol>
+            <li>importando useState: <br><img src="images/importing-useState.png" alt=""></li>
+            <li>chamando useState: <br><img src="images/calling-useState.png" alt=""></li>
+            <li>aceita um valor inicial (no Class, era um objeto com um Array de cartas dentro):
+                <br>
+                <ul style="list-style: disc;">
+                    <li>ANTES: <br><img src="images/initial-state-CLASS.png" alt=""></li></li>
+                    <li>DEPOIS: <br><img src="images/initial-state-FUNCTION.png" alt=""></li></li>
+                </ul>
+            </li>
+            <li>quando o useState() é executado, ele retorna duas coisas:
+                <br>1° a variável (que vamos popular com as cartas)
+                <br>2° uma função responsável por atualizar essa variável
+                <br><img src="images/variables.png" alt="">
+            </li>
+            <li>o useState() retorna um Array de duas posiçõe, onde <span class="cis-green">a primeira posição é a variável</span> e <span class="cis-green">a segunda posição é a função</span> responsável por atualizar essa variável. <br>Fazendo uma atribuição via desestruturação, temos o seguinte código: 
+                <br><img src="images/desestruturation.png" alt="">
+            </li>
+            <li>retornando a parte visual do componente: 
+                <br><img src="images/return-jsx.png" alt="">
+                <br>OBS: Note que, antes, <span class="cis-dark_blue">"deck"</span> era <span class="cis-dark_red">"this.state"</span>.
+            </li>
+        </ol>
+    </section>
+    
+</body>
+</html>
