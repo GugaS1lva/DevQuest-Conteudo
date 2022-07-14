@@ -1,4 +1,4 @@
-import { Component, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 async function createDeck() {
     const response = await fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
@@ -59,6 +59,27 @@ const DeckOfCards = () => {
     const [deck, setDeck] = useState({
         cards: []
     })
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const deckId = await createDeck()
+            const cards = await getCards(deckId)
+
+            setDeck({
+                cards: cards.cards
+
+            })
+        }
+
+        fetchData()
+    }, [])
+
+    useEffect(() => {
+        const exempleVar = async () => {
+            const lol = 'lol'
+        }
+        
+    }, [exempleVar, new_var, new_var2])
 
     return (
         <section>

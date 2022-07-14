@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hooks na Prática</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cis-green{
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_red{
+            background-color: darkred;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_green{
+            background-color: darkgreen;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_blue{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hooks na Prática</h1>
+
+    <h3>Refatorando o componente de <span class="cis-dark_red">Class sem Hooks</span> para um componente de <span class="cis-dark_green">Função com Hooks</span>.</h3>
+
+    <section>
+        <h4>Atualizando o estado do componente:</h4>
+
+        <ol>
+            <li>importando useEffect: <br><img src="images/importing-useEffect.png" alt=""></li>
+            <li>chamando useEffect: <br><img src="images/calling-useEffect.png" alt=""> <br>ATENÇÃO AO LOCAL DE CHAMADA DO <span class="cis-dark_red">useEffect()</span></li>
+            <li>o useEffect recebe uma função por parâmetro e essa função será executada assim que o componente for montado (exatamente como o componentDidMount): <br><img src="images/calling-useEffect-02.png" alt=""></li>
+            <li>declarando o comportamento do useEffect (o mesmo comportamento do componentDidMount): <br><img src="images/colateral-effect.png" alt=""></li>
+            <li>substituindo o método atualizador antigo pelo novo: <br><img src="images/old-to-new-method.png" alt=""></li>
+            <li>note que há "await" dentro do comportamento do useEffect, então precisamos de um "async", porém, a declaração assíncrona retorna um objeto assíncrono (uma promisse) e o useEffect só aceita retornos de Nada ou de Funções de Limpeza (async retorna uma promisse, não é nem Nada e nem Limpeza): <br><img src="images/syntax-error.png" alt=""></li>
+            <li>criando uma nova Função que recebe uma função assíncrona, jogando todo o conteúdo de baixo, para cima e chamando a nova Função fetchData: <br><img src="images/syntax-error-resolved.png" alt=""> <img src="images/syntax-error-resolved-02.png" alt=""></li>
+            <li>NOTA: Quando que o useEffect() é chamado na prática? 
+                <br>Ele roda no momento que o componente é montado na tela e quando o componente é atualizado. <br>Da forma como fizemos acima, vai dar problema, pois ele é atualizado quando ele é chamado, daí quando ele for chamado, ele vai atualizar e quando ele é atualizado ele é chamado, daí quando ele for chamado ele vai ser atualizado e assim será infinitamente.
+            </li>
+            <li>Pra resolver o problema acima, precisamos passar pro useEffect um segundo parâmetro (uma dependência). 
+                <br>O primeiro seria a Arrow Function que simula o DidMount: 
+                <br><img src="images/first-param.png" alt="">
+                <br>O segundo seria um Array Vazio:
+                <br><img src="images/second-param.png" alt="">
+                <br>Quando existe esse Array vazio, o useEffect entende: "executar a Função que simula o DidMount apenas na montagem do componente.".
+            </li>
+            <li>Resumo:
+                <br>1 - Se eu quiser que o useEffect carrege um componente apenas uma vez, precisa de uma dependência (um Array Vazio) no segundo parâmetro do useEffect.
+                <br>2 - Se eu quiser que o useEffect fique sempre carregando o componente, não precisa passar nada além da "Função-Simuladora".
+                <br>3 - Se eu quiser que o useEffect carregue um componente somente quando o estado for modificado, precisa passar pra dentro da dependência (do Array Vazio) o que eu quero enganchar (variável "deck", por exemplo). Daí toda vez que o estado do componente for atualizado, o useEffect vai tratar de carregar o componente de novo. NOTA: Como a dependência é um Array, dentro dele pode ter muitas variáveis sendo "escutadas" ao mesmo tempo.
+                <br><img src="images/resuming.png" alt="">
+            </li>
+            <li>Final Tip: O useEffect pode ser chamado várias vezes dentro do meu componente de função. <br>Ex: um useEffect que fica escutando novas variáveis e para cada modificação no estado de cada uma delas, dispara uma função diferente: <br><img src="images/tip.png" alt=""></li>
+        </ol>
+    </section>
+    
+</body>
+</html>
