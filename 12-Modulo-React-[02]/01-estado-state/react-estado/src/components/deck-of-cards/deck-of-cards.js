@@ -74,13 +74,6 @@ const DeckOfCards = () => {
         fetchData()
     }, [])
 
-    useEffect(() => {
-        const exempleVar = async () => {
-            const lol = 'lol'
-        }
-        
-    }, [exempleVar, new_var, new_var2])
-
     return (
         <section>
             <ul>
