@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renderização Condicional</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cis-green{
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-yellow{
+            background-color: rgb(240, 221, 116);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_red{
+            background-color: darkred;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_yellow{
+            background-color: darkgoldenrod;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_green{
+            background-color: darkgreen;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_blue{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        ol li{
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Renderização Condicional</h1>
+    <h2><a href="https://pt-br.reactjs.org/docs/conditional-rendering.html" target="_blank">Documentation</a></h2>
+
+    <h3>Renderização Condicional: <span class="cis-green">É quando um componente, ou parte dele, deve, ou não, ser renderizado.</span></h3>
+
+    <section>
+        <h2>Renderização Condicional Simples:</h2>
+
+        <ul>
+            <li>Criando os componentes de mensagem: 
+                <br>USUÁRIO
+                <br><img src="images/userMessage-component.png" alt="">
+                <br>VISITANTE
+                <br><img src="images/guestMessage-component.png" alt="">
+            </li>
+
+            <li>Criando o componente de lógica: 
+                <br><img src="images/login-logic.png" alt="">
+                <ol>
+                    <li>Importando os dois componentes de mensagem.</li>
+                    <li>Declarando o componente com um bom nome.</li>
+                    <li>Declarando a variável de teste.</li>
+                    <li>Criando a lógica: 
+                        <br>"Se a variável 'isLoggedIn' for <span class="cis-dark_green">verdadeira</span>, renderize o componente <span class="cis-dark_green">'UserMessage'</span>. <span class="cis-dark_red">Se não</span>, renderize <span class="cis-dark_red">'GuestMessage'</span>."
+                        <br>OBS: Note que, por ser uma verificação apenas com duas opções, o <span class="cis-dark_yellow">"else"</span> se torna opcional.
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Renderização Condicional Inline com o Operador Lógico &&:</h2>
+
+        <ul>
+            <li>Exemplo: 
+                <br><img src="images/&&-example.png" alt="">
+                <ol>
+                    <li>Declarando o componente com um bom nome.</li>
+                    <li>UnreadMessages provavelmente é um Array de mensagens não lidas e estamos atribuindo esse array dentro de uma variável com o mesmo nome "UnreadMessages".</li>
+                    <li>Renderizando o jsx comum (uma div em volta e um h1).</li>
+                    <li>Entre chaves, podemos usar código js tranquilamente dentro do React.</li>
+                    <li>Então vamos lá, por que isso funciona assim? No JS, quando passamos True && Expressão, o JS vai mostrar sempre a própria expressão. 
+                        <br>Ex: 
+                        <br><img src="images/&&-01.png" alt="">
+                        <br><span class="cis-green">"<code>unreadMessages.length > 0</code>"</span> >>> Primeiro teste é igual a True
+                        <br>Em seguida, temos && vazio, daí o JS cai na Expressão <span class="cis-yellow">"<code>h2 lorem lorem lorem...</code>"</span> e renderiza a própria Expressão, no caso, o <span class="cis-yellow">h2 lorem</span>.
+                        <br><span class="cis-dark_red">Se o Primeiro teste for igual a False e logo depois um && vazio, daí o JS retorna nada e finaliza o teste lógico.</span>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Renderização Condicional Inline com Operador Ternário</h2>
+        <h3>OBS: APENAS PARA TESTES DE LÓGICA SIMPLES (tem difícil leitura).</h3>
+
+        <ul>
+            <li>Exemplo: 
+                <br><img src="images/Screenshot_57.png" alt="">
+                <ol>
+                    <li>Declarando o componente com um bom nome.</li>
+                    <li>Declarando a variável de teste.</li>
+                    <li>Renderizando o jsx comum (uma div com uma mensagem).</li>
+                    <li>Criando a Lógica:
+                        <br><code>{<span class="cis-dark_green">isConected</span> ? 'conectado' : 'desconectado'}</code> >>> Se isConected for <span class="cis-dark_green">True</span>, mostra a string depois da enterrogação: 'conectado'.
+                        <br><code>{<span class="cis-dark_red">isConected</span> ? 'conectado' : 'desconectado'}</code> >>> Se isConected for <span class="cis-dark_red">False</span>, mostra a string depois dos dois pontos: 'desconectado'.
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
