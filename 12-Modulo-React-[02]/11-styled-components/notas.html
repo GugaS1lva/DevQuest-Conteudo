@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Components</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cis-green{
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-yellow{
+            background-color: rgb(240, 221, 116);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_red{
+            background-color: darkred;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_yellow{
+            background-color: darkgoldenrod;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_green{
+            background-color: darkgreen;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_blue{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        ol li{
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styled Components</h1>
+    <h2><a href="https://styled-components.com/">Documentation</a></h2>
+    
+    <h3>Com o Styled Components o Componente vai reconhecer somente seu próprio estilo, só esse estilo vai ser carregado na tela. 
+        <br>Isso evita carregar estilos obsoletos que foram criados para outros Componentes.
+        <br>Evita, também, bugs em nomes de classes.
+        <br>Fica mais fácil de excluir arquivos CSS porque cada CSS estará vinculado ao seu próprio Componente.
+        <br>O CSS fica mais dinâmico porque vai poder adaptar o Código/Regra CSS à partir das Props do Componente ou de um <span class="cis-green">Tema Global</span>. Poderemos usar código JS dentro do CSS.
+        <br>Manutenção ficou mais simples.
+        <br>Styled Components cria prefixos automáticos - São códigos CSS específicos que escrevemos pra algumas propriedades pra que essas propriedades funcionem em todos os navegadores.
+    </h3>
+
+    <section>
+        <ul>
+            <li></li>
+        </ul>
+    </section>
+
+</body>
+</html>
