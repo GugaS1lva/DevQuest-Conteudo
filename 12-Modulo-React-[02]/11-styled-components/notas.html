@@ -33,13 +33,19 @@
             border-radius: 4px;
         }
         .cis-dark_green{
-            background-color: darkgreen;
+            background-color: rgb(6, 53, 6);
             color: white;
             padding: 2px 4px;
             border-radius: 4px;
         }
         .cis-dark_blue{
             background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-night{
+            background-color: black;
             color: white;
             padding: 2px 4px;
             border-radius: 4px;
@@ -58,14 +64,68 @@
         <br>Isso evita carregar estilos obsoletos que foram criados para outros Componentes.
         <br>Evita, também, bugs em nomes de classes.
         <br>Fica mais fácil de excluir arquivos CSS porque cada CSS estará vinculado ao seu próprio Componente.
-        <br>O CSS fica mais dinâmico porque vai poder adaptar o Código/Regra CSS à partir das Props do Componente ou de um <span class="cis-green">Tema Global</span>. Poderemos usar código JS dentro do CSS.
+        <br>O CSS fica mais dinâmico porque vai poder adaptar o Código/Regra CSS à partir das Props do Componente ou de um <span class="cis-green">Tema Global</span>. <span class="cis-yellow">Poderemos usar código JS dentro do CSS</span>.
         <br>Manutenção ficou mais simples.
         <br>Styled Components cria prefixos automáticos - São códigos CSS específicos que escrevemos pra algumas propriedades pra que essas propriedades funcionem em todos os navegadores.
     </h3>
 
     <section>
+        <h3>Tutorial Styled-Components</h3>
+
         <ul>
-            <li></li>
+            <li>Instalando a Biblioteca <span class="cis-dark_green">styled-components</span> no projeto: <br><img src="images/npm-i-styled-components.png" alt=""></li>
+            <li>Importando a Biblioteca <span class="cis-dark_green">styled-components</span> no projeto: <br><img src="images/import-styled-components.png" alt=""> </li>
+            <li>Escolhendo a tag que será estilizada: 
+                <br><img src="images/componente-tag.png" alt="">
+                <br>Vamos estilizar a tag <span class="cis-dark_blue">Section</span> que está sendo renderizada pelo componente <span class="cis-yellow">PostDetails()</span>:
+            </li>
+            <li>Atenção ao lugar onde vai ser criado o Styled-Component. Deve ser criado logo após o fechamento das chaves do componente: <br><img src="images/local.png" alt=""></li>
+            <li>O nome do Styled-Component deve ser o mesmo nome da Tag que deseja estilizar mas com letra maiúscola: <br><img src="images/nome.png" alt=""></li>
+            <li>Acessando a propriedade 'styled' + nome da tag, colocamos a Template-String e estamos prontos pra estilizar: 
+                <br><img src="images/fim-escopo.png" alt="">
+                <br>OBS: styled.<span class="cis-dark_red">nomeDaTagQueDesejaEstilizar</span>.
+                <br>OBS.02: O nome do componente estilizado é o próprio nome da tag mas com a inicial maiúscola. 
+            </li>
+            <li>Dentro da Template-String escrevemos o nosso código CSS tranquilamente. Por fim, substituímos o antigo nome da Tag pelo novo e estilizdo nome (que é apenas o mesmo nome só que com letra inicial maiúscola): <br><img src="images/end.png" alt=""></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Estilos Globais:</h3>
+
+        <ul>
+            <li>Deve ser criado APENAS no pai de todos os elementos (App.js), na página que vai renderizar todos o primeiro componente na tela. <br>Nesse arquivo, importe o <span class="cis-dark_blue">createGlobalStyles</span> from 'styled-components': <br><img src="images/AppJS.png" alt=""></li>
+            <li>Logo abaixo da função principal que renderiza a aplicação, crie um novo componente chamado <span class="cis-dark_red">GlobalStyle</span> que acessa a propriedade <span class="cis-dark_red">'createGlobalStyles'</span>: 
+                <br><img src="images/global-style.png" alt="">
+                <br>OBS: Muita Atenção com os nomes dos componentes (São Convenções).
+            </li>
+            <li>Os estilos vão dentro da Template-String e o Componente de Estilo Global deve ser chamado em cima das rotas do App.JS: <br><img src="images/global-style-02.png" alt=""></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>O Dinamismo do Styled-Components:</h3>
+        <h4>Podemos criar componentes com propriedades específicas e à partir disso criar validações com comportamentos diferentes pra cada opção. Ex: Caso o componente tenha uma propriedade chamada 'night', o componente terá um novo visual. Caso não, não terá.</h4>
+        <br>
+        <br>
+        <h4>Então vamos lá: Caso a Section tenha uma propriedade chamada <span class="cis-night">'night'</span> o componente inteiro ficará com uma cor adaptada à noite. Caso não, ficará apenas com a cor branca padrão.</h4>
+
+        <ul>
+            <li>Dentro dos estilos do componente Section, faça um Cifrão + Chaves pra poder escrever código JS: <br><img src="images/crifrao-e-chaves.png" alt=""></li>
+            <li>Dentro das Chaves, crie uma Arrow Function que acessa as propriedades do componente: 
+                <br><img src="images/acessando-props.png" alt="">
+                <br>"Se o componente tem a propriedade chamada Night, continue lendo..."
+            </li>
+            <li>Depois dos 'E-Comerciais' (&&), deve existir a expressão '<span class="cis-green">css</span>', mas para ela funcionar ela deve ser importada após a importação do styled-components:
+                <br><img src="images/css``.png" alt="">
+                <br><img src="images/css``-02.png" alt="">
+                <br>OBS: Dentro da Template-String da propriedade css (css``) é onde vai ficar o bloco de código que será executado caso a condição anterior aos && seja verdadeira.
+            </li>
+            <li>Isto é, Se a primeira parte da expressão for Verdadeira, execute a segunda parte da expressão: <br><img src="images/verificando.png" alt=""></li>
+            <li>Por fim, basta apenas inserir ou não a propriedade <span class="cis-night">'night'</span> dentro do componente pra que o estilo condicional seja ativado: 
+                <br><img src="images/night.png" alt="">
+                <br>RESULTADO:
+                <br><img src="images/result.png" alt=""></li>
         </ul>
     </section>
 
