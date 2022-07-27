@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas - 01</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cis-green{
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-yellow{
+            background-color: rgb(240, 221, 116);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_red{
+            background-color: darkred;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_yellow{
+            background-color: darkgoldenrod;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_green{
+            background-color: darkgreen;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_blue{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        ol li{
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Context - API</h1>
+    <h2><a href="https://pt-br.reactjs.org/docs/context.html">Documentation</a></h2>
+    
+    <h3>O Context é uma forma de ter um Estado mais Global entre componentes Pais e Filhos. E com esse Estado mais Global não temos mais um problema que existia chamado PropDrilling (Perfuração de Props) - que se resume em ficar passando Props desde o Pai até a vigésema geração pra que somente essa ultima tenha propriedades específicas.</h3>
+
+    <p>Vemos abaixo a diferença entre o Não-uso do Context e do uso do Context: 
+        <br><img src="imagens/diferencas.png" alt="">
+        <br>Vemos que em ambos os casos o <span class="cis-green">componente 2</span> não utiliza as props, porém, no exemplo 1 (esquerda) as props ainda precisam ser declaradas dentro do <span class="cis-green">componente 2</span>.
+        <br>Já no exemplo 2 (direita) as props são passadas apenas nos componentes que vão precisar delas.
+    </p>
+
+    <p>Context.Provider: Provedor é alguém que provê um estado/informações que chegarão até os componentes filhos.</p>
+    <p>Quando usar o Context: Geralmente em botões pra alterar o Tema da página (dark-mode or light-mode). Da pra pegar os dados de Login de um usuário e passar pra vários componentes abaixo da árvore preenchendo com seu nome vários micro-cartões pela tela, por exemplo, sem precisar ficar passando essas Props pra todos os filhos até chegar no destino.</p>
+
+    <p>Context API serve pra resolver o problema de PropDrilling em sistemas menores/mais simples. Redux vai ser uma parada mais robusta pra trabalhar com essa questão de estado dos componentes.</p>
+</body>
+</html>
