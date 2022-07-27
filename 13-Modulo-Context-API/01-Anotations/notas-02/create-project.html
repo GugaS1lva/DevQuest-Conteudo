@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas - 02</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cis-green{
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-yellow{
+            background-color: rgb(240, 221, 116);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_red{
+            background-color: darkred;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_yellow{
+            background-color: darkgoldenrod;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_green{
+            background-color: darkgreen;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_blue{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        ol li{
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Theme Toggler - [Context API]</h1>
+    
+
+    <section>
+        <h3>Criando o Projeto:</h3>
+
+        <ul>
+            <li>npx create-react-app nome-do-projeto: <br><img src="imagens/npx.png" alt=""></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>NOTA: O Context-API já está dentro da biblioteca do React, então não é necessário instala-lo separadamente, contudo, é necessário alguns passos pra poder usa-lo:</h3>
+
+        <ul>
+            <li>Na pasta <span class="cis-dark_yellow">src</span> do projeto deve existir uma pasta chamada <span class="cis-dark_blue">context</span> ou <span class="cis-dark_blue">contexts</span>. <br>Por sua vez, dentro dessa pasta, deve existir um arquivo chamado <span class="cis-dark_blue">theme-context.js</span>, onde será criado o contexto do tema: <br><img src="imagens/pastas.png" alt=""></li>
+            <li><span class="cis-dark_yellow">criando o contexto:</span>
+                <ol>
+                    <li>Importando o createContext: <br><img src="imagens/import-context.png" alt=""></li>
+                    <li>Criando o <span class="cis-dark_green">Contexto de Temas</span>: <br><img src="imagens/theme-context.png" alt=""></li>
+                    <li>Criando o <span class="cis-green">Objeto de Temas</span> que terá os temas dentro: <br><img src="imagens/object-themes.png" alt=""></li>
+                    <li>Quando o Contexto é criado, ele já pode ter um valor ou pode ter o valor de um objeto vazio, inicialmente: <br><img src="imagens/context-value-01.png" alt=""></li>
+                    <li>Criando o <span class="cis-dark_green">Provedor de Temas</span>: <br><img src="imagens/theme-provider.png" alt=""></li>
+                    <li>Add Props + retornando um elemento: <br><img src="imagens/theme-provider-02.png" alt=""></li>
+                    <li>Informando pro <span class="cis-green">value={}</span> os dados que quer propagar. Por enquanto, fica assim: <br><img src="imagens/theme-provider-03.png" alt=""></li>
+                    <li>Finalizando o theme-provider: <br><img src="imagens/theme-provider-04.png" alt=""></li>
+                    <br>
+                    <li>Importando e escrevendo o provedor no App.js: <br><img src="imagens/escrevendo-provider.png" alt="">
+                        <br>OBS: No App.js, tudo que estiver dentro do componente &lt;ThemeProvider&gt; é onde ficará todos os componentes que utilizarão o contexto.
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+
+    <aside>
+        <h4>Professor disse que a ordem é:</h4>
+        <ol>
+            <li>importar o createContext</li>
+            <li>criar o objeto de temas</li>
+            <li>criar o contexto de temas</li>
+            <li>criar o provedor de temas</li>
+        </ol>
+    </aside>
+    
+</body>
+</html>
