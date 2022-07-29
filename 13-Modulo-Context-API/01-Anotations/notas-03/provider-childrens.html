@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas - 03</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cis-green{
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-yellow{
+            background-color: rgb(240, 221, 116);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_red{
+            background-color: darkred;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_yellow{
+            background-color: darkgoldenrod;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_green{
+            background-color: darkgreen;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_blue{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        ol li{
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Theme Toggler - [Context API]</h1>
+
+    <section>
+        <h2>Aqui vamos criar os componentes filhos que vão receber o contexto do Provider.
+            <br>Pra exemplificar vamos criar um Componente chamado ThemeTogglerButtom que será responsável por trocar o tema da página.
+        </h2>
+        
+        <ul>
+            <li>Criando as pastas e arquivos do componente dentro da <span class="cis-green">src</span>: <br><img src="imagens/pastas.png" alt=""></li>
+            <li>Criando a casca do componente: <br><img src="imagens/escopo-theme.toggler.png" alt=""></li>
+            <li>Passando as informações do Contexto (os temas) pra dentro dos Componentes Filhos (ThemeTogglerButtom): 
+                <br><img src="imagens/escrevendo....png" alt="">
+                <br>NOTA: Tudo que for colocado dentro do <span class="cis-green">ThemeProvider</span> vai ser enviado pro <span class="cis-yellow">ThemeContext.js</span>, vai ser injetado através do children e vai ter acesso às informações através do <span class="cis-dark_red">Value={{themes}}</span>.
+            </li>
+            <li>Acessando as informações dos Componentes Filhos:
+                <h3>Criando um Hook novo:</h3>
+                <ol>
+                    <li>desestruturando o que está vindo do <span class="cis-green">Value</span> (um objeto de Temas): 
+                        <br><img src="imagens/desestruturando.png" alt="">
+                    </li>
+                    <li>passando um Hook novo (<span class="cis-green">useContext()</span>) pra ter acesso ao contexto: <br><img src="imagens/useContext.png" alt=""></li>
+                    <li>esse (useContext()) precisa saber qual é o contexto que quer acessar: <br><img src="imagens/useContext-02.png" alt=""></li>
+                    <li>pronto, agora temos a propriedade Themes dentro de um Componente Filho. 
+                        <br>Observe que nada foi passado pras Props do componente, mas, mesmo assim, o Componente Filho (ThemeTogglerButtom) recebe as propriedades declaradas anteriormente (themes): <br><img src="imagens/result-01.png" alt="">
+                    </li>
+                </ol>
+            </li>
+            <li>Criando um novo componente de botão dentro do ThemeTogglerButtom: <br><img src="imagens/create-button.png" alt=""></li>
+            <li>Importando o novo componente de botão: 
+                <br><img src="imagens/import-button.png" alt="">
+                <br>OBS: O Button precisa ser mais genérico. Vamos então passar o 'Click-Me!' para as Props através do <span class="cis-green">Operador Spread</span> a seguir:
+            </li>
+            <li>Basicamente o Spread pega qualquer propriedade que eu passar dentro do componente e passa como uma Prop, deixando o botão muito mais genérico: <br><img src="imagens/spread.png" alt=""></li>
+            <li>Passando o conteúdo de Temas pra dentro do Button (que está dois niveis abaixo do Componente Pai): <br><img src="imagens/Hookando.png" alt=""></li>
+            <li>Note que agora tanto o Primeiro Componente Filho quanto o Segundo, possuem os mesmos Temas apesar de ambos não terem esses Temas passados como Props por parâmetro pra dentro de si: <br><img src="imagens/note.png" alt=""></li>
+        </ul>
+    </section>
+</body>
+</html>
