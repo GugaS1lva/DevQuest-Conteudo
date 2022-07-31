@@ -8,6 +8,10 @@ export const themes = {
     dark: {
         background: 'black',
         color: 'white'
+    },
+    wan: {
+        altura: 1.78,
+        pinto: 2 + 'm'
     }
 }
 
