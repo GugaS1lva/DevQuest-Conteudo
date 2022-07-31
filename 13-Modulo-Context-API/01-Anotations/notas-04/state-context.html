@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas - 04</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cis-green{
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-yellow{
+            background-color: rgb(240, 221, 116);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_red{
+            background-color: darkred;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_yellow{
+            background-color: darkgoldenrod;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_green{
+            background-color: darkgreen;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .cis-dark_blue{
+            background-color: darkcyan;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        ol li{
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Theme Toggler - [Context API]</h1>
+    <h2><a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage">Documentation</a></h2>
+
+    <section>
+        <h3>Criando um Hook de Estado pra alternar o estado dos elementos (nesse caso o estilo deles)</h3>
+
+        <p>OBS: "Quero uma forma de que quando eu clicar noo botão ele alterne o tema. Não vou adicionar o OnClick dentro do componente de Button pra que ele fique o mais genérico possível, vou passar essa responsabilidade pro ThemeTogglerButton porquê ele que é o Botão-Alternador-de-Tema."</p>
+        
+        <hr>
+        <h4>REFATORAÇÃO: Dentro do nosso <span class="cis-yellow">theme-context.js</span> podemos perceber que estamos passando o Objeto de Temas pro ThemesProvider, isso não é muito útil. <br><img src="imagens/ex-01.png" alt=""></h4>
+        
+        <ul>
+            <li>Mandando apenas o <span class="cis-dark_green">estado de tema atual</span> da aplicação no lugar do <span class="cis-dark_red">Objeto de Temas completo</span>: 
+                <br><img src="imagens/ex-02.png" alt="">
+                <br>Explicando o Código: "Do objeto Themes, vamos pegar apenas o Light: <img src="imagens/ex-02-1.png" alt="">. Depois, fazemos uma desestruturação e colocamos apenas esse Light dentro de uma nova variável chamada Theme (no singular) junto de uma outra variável chamada SetTheme." 
+            </li>
+            <li>Passando o Theme e o SetTheme pra dentro dos Componentes Filhos: <br><img src="imagens/ex-03.png" alt=""></li>
+
+            VAMOS CONTINUAR DO MINUTO 1:43, PASSANDO O THEME E O SETTHEME PRA DENTRO DOS COMPONENTES FILHOS PARTE DOIS
+        </ul>
+    </section>
+    
+</body>
+</html>

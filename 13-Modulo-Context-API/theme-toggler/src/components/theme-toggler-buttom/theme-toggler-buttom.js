@@ -4,13 +4,11 @@ import { Button } from "../button/button"
 
 export const ThemeTogglerButtom = () => {
 
-    const { themes } = useContext(ThemeContext)
-
-    console.log('ThemeTogglerButtom themes', themes)
+    const { theme, setTheme } = useContext(ThemeContext)
 
     return (
         <div>
-            <Button>Clique-Me!</Button>
+            <Button onClick={() => setTheme(theme)}>Clique-Me!</Button>
         </div>
     )
 }
