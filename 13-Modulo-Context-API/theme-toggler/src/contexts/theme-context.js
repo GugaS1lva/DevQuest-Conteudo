@@ -8,10 +8,6 @@ export const themes = {
     dark: {
         background: 'black',
         color: 'white'
-    },
-    wan: {
-        altura: 1.78,
-        pinto: 2 + 'm'
     }
 }
 
@@ -19,7 +15,7 @@ export const ThemeContext = createContext({})
 
 export const ThemeProvider = (props) => {
 
-    const { theme, setTheme } = useState(themes.light)
+    const [ theme, setTheme ] = useState(themes.light)
 
     return (
         <ThemeContext.Provider value={{theme, setTheme}}>

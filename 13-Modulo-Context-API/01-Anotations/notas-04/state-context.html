@@ -65,13 +65,37 @@
         <ul>
             <li>Mandando apenas o <span class="cis-dark_green">estado de tema atual</span> da aplicação no lugar do <span class="cis-dark_red">Objeto de Temas completo</span>: 
                 <br><img src="imagens/ex-02.png" alt="">
+                <br>ATENÇÃO: Há um erro na linha 18. <span class="cis-dark_red">theme</span> e <span class="cis-dark_red">setTheme</span> são escritos ENTRE COLCHETES, não entre chaves!
                 <br>Explicando o Código: "Do objeto Themes, vamos pegar apenas o Light: <img src="imagens/ex-02-1.png" alt="">. Depois, fazemos uma desestruturação e colocamos apenas esse Light dentro de uma nova variável chamada Theme (no singular) junto de uma outra variável chamada SetTheme." 
             </li>
             <li>Passando o Theme e o SetTheme pra dentro dos Componentes Filhos: <br><img src="imagens/ex-03.png" alt=""></li>
-
-            VAMOS CONTINUAR DO MINUTO 1:43, PASSANDO O THEME E O SETTHEME PRA DENTRO DOS COMPONENTES FILHOS PARTE DOIS
+            <li>Passando o Theme e o SetTheme que está vindo do Provedor e excluindo a linha do console.log: <br><img src="imagens/ex-04.png" alt=""></li>
+            <li>Criando um Evento de clique e declarando uma função. Essa função (no caso será o setTheme que recebe Theme por parâmetro) só é ativada quando o evento de clique disparar: <br><img src="imagens/ex-05.png" alt="">
+                <br>OBS: lembrando, o 'theme' é o tema atual, então, quando o evento for disparado, vai mudar pro próximo tema. 
+            </li>
+            <li>Criando a lógica do botão: <br><img src="imagens/ex-06.png" alt="">
+                <br>"Se o que tiver vindo do 'Theme' for idêntico ao Light, alterne pro Dark. Se não, altere pro Light."
+            </li>
+            <li>Informando pros componentes que quando o evento de clique for ativado vai mudar o tema dos componentes: <br><img src="imagens/ex-07.png" alt=""></li>
         </ul>
     </section>
-    
+
+    <section>
+        <h3>Criando mais um componente que terá seu tema alterado porque estará dentro do Contexto:</h3>
+
+        <ul>
+            <li>Criando as pastas e os arquivos: <br><img src="imagens/ex-01-CARD.png" alt=""></li>
+            <li>Criando o escopo do componente Card: <br><img src="imagens/ex-02-CARD.png" alt=""></li>
+            <li>Criando o Hook do useContext e a partir disso pegando o tema atual: <br><img src="imagens/ex-03-CARD.png" alt=""></li>
+            <li>Informando pros componentes que quando o evento de clique for ativado vai mudar o tema dos componentes: <br><img src="imagens/ex-04-CARD.png" alt=""></li>
+            <li>Importando o novo componente Card no App.JS: <br><img src="imagens/ex-05-CARD.png" alt="">
+                <br>OBS: Lembrando que ele deve ser chamado APENAS dentro do <span class="cis-dark_blue">ThemeProvider</span> pra que ele possa pegar o contexto.
+            </li>
+        </ul>
+    </section>
+
+    <h4>Fim! Agora, cada componente que estiver dentro do contexto, quando o botão for ativado, terá seu estilo alterado.</h4>
+    <img src="imagens/result-01.png" alt="">
+    <img src="imagens/result-02.png" alt="">
 </body>
 </html>
